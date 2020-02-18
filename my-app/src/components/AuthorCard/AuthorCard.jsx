@@ -6,7 +6,7 @@ import './AuthorCard.css';
 function AuthorCard({name, shortDescription}) {  
   return (
     <Card className="card-author">
-      <Card.Img variant="top" src="./author-without-photo.jpg" />
+      <Card.Img variant="top" src="#" />
       <Card.Body>
         <Card.Title className="card__name">{name}</Card.Title>
         <Card.Text className="card__text">{shortDescription}</Card.Text>

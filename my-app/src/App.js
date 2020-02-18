@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import AuthorCards from './components/AuthorCard/AuthorCard'
+import AuthorsList from './components/AuthorsList/AuthorsList';
+
 
 function App() {
   return (
     <div className="App">
-      <AuthorCards/>
+      <AuthorsList />   
     </div>
   );
 }
