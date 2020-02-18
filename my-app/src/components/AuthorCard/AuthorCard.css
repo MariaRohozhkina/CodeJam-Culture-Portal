@@ -1,0 +1,10 @@
+.card-author {
+    width: 60%;
+    margin: 40px;
+    padding: 20px;
+}
+
+.card-author__img {
+    width: 216px;
+    height: 216px;
+}
