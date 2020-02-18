@@ -3,7 +3,7 @@ import  AuthorCard from '../AuthorCard/AuthorCard';
 import { CONTENT_ARRAY } from '../../constants/Content.js';
 import './AuthorsList.css';
 
-function AuthorsList(array) {
+function AuthorsList() {
   return (
     <section className="content">
       <div className="wrapper">
