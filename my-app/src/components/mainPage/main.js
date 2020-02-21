@@ -15,6 +15,11 @@ class MainPage extends Component {
   }
 
     render() {
+      const nameOfRubric = 'Автор дня'; 
+      const nameOfAuthor = photographersData[2].dataRU.name;
+      const summary = photographersData[2].dataRU.summary;
+      const learnMoreBtn = 'Узнать больше »';
+      
       return (
         <Fragment>
           <div className="jumbotron">
@@ -27,11 +32,11 @@ class MainPage extends Component {
               <img className="author-photo-container" src={photo}></img>
             </div>
             <div>
-              <h2>Автор дня</h2>
-              <h5>{photographersData[2].dataRU.name}</h5> 
-              <p>{photographersData[2].dataRU.summary}</p>
+              <h2>{nameOfRubric}</h2>
+              <h5>{nameOfAuthor}</h5> 
+              <p>{summary}</p>
               <p className='border'>
-                <a className="btn btn-default" role="button">Узнать больше »</a>
+                <a className="btn btn-default" role="button">{learnMoreBtn}</a>
               </p>
             </div>
           </div>
