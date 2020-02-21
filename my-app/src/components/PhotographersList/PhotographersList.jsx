@@ -1,9 +1,9 @@
 import React from 'react';
-import  AuthorCard from '../AuthorCard/AuthorCard';
+import  AuthorCard from '../PhotographerCard/PhotographerCard';
 import photographersData from '../../assets/photographersData';
-import './AuthorsList.css';
+import './PhotographersList.css';
 
-function AuthorsList() {
+function PhotographersList() {
   return (    
     <section className="content">
       <div className="wrapper">
@@ -20,4 +20,4 @@ function AuthorsList() {
   );
 }
 
-export default AuthorsList;
+export default PhotographersList;

@@ -1,10 +1,10 @@
-.card-author {
+.card-photographer {
     margin: 20px;
     padding: 20px 10px;
     width: 300px;
 }
 
-.card-author__photo {
+.card-photographer__photo {
     border-radius: 5px;  
     display: block;
     width: 100%;

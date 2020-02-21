@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import './AuthorCard.css';
+import './PhotographerCard.css';
 
 
-function AuthorCard({name, shortDescription, photo, years}) {  
+function PhotographerCard({name, shortDescription, photo, years}) {  
   return ( 
-    <Card className="card-author">
+    <Card className="card-photographer">
       <div className="photo">
-        <img className="card-author__photo" src={photo} alt="author" />
+        <img className="card-photographer__photo" src={photo} alt="photographer" />
       </div>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -19,4 +19,4 @@ function AuthorCard({name, shortDescription, photo, years}) {
   )
 }
 
-export default AuthorCard;
+export default PhotographerCard;
