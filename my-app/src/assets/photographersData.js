@@ -219,7 +219,8 @@ const photographersData = [
 				'Vladimir is the author of photo albums "Vitebsk" (2004, 2006), "Ninburg" (2007), "Vitebsk" together with A. Glebov (2007), as well as the book "Mark Chagall and Vitebsk" with L. Khmelnitskaya and A. Vyshka (2007).'
 			]
 		},
-		photo: 'https://parizhsk.fr/wp-content/uploads/2017/02/vladimir-bazan-2011.jpg',
+		// photo: 'https://parizhsk.fr/wp-content/uploads/2017/02/vladimir-bazan-2011.jpg',
+		photo: 'http://art14.com.ua/wp-content/uploads/2017/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2017-05-25-%D0%B2-13.54.251.png',
 		photogallery: [
 			'http://www.photoline.ru/critic/picpart/1226/1226601635.jpg',
 			'http://www.photoline.ru/critic/picpart/1230/1230276553.jpg',

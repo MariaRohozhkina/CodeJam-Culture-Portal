@@ -1,16 +1,18 @@
 import React from 'react';
 import  AuthorCard from '../AuthorCard/AuthorCard';
-import { CONTENT_ARRAY } from '../../constants/Content.js';
+import photographersData from '../../assets/photographersData';
 import './AuthorsList.css';
 
 function AuthorsList() {
-  return (
+  return (    
     <section className="content">
       <div className="wrapper">
-        {CONTENT_ARRAY.map((card) => (
+        {photographersData.map((card) => (
         <AuthorCard 
-          name={card.name}
-          shortDescription={card.shortDescription}
+          photo= {card.photo}
+          years={card.dataRU.years}
+          name={card.dataRU.name}
+          shortDescription={card.dataRU.summary}
         />
         ))}
       </div>
