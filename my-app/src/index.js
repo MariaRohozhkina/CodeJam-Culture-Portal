@@ -11,7 +11,7 @@ ReactDOM.render(
         <App>
             <Switch>
                 <Route exact path='/' render={()=><MainPage />} />
-                <Route path='/authors' render={()=><AuthorsList />} />
+                <Route path='/authors' render={()=><PhotographersList />} />
                 <Route path='/team' render={()=><TeamPage />} />
                 <Route path='/worklog' render={()=><Worklog />} />
                 <Route path='/styleguide' render={()=><StyleGuide />} />
