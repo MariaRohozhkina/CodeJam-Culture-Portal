@@ -1,3 +1,13 @@
 .team-page {
-  margin-top: 100px;
+  margin: 100px auto;
+}
+
+.team-avatar {
+  height: 280px;
+}
+
+.team-card {
+  -webkit-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
+  -moz-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
+  box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
 }
