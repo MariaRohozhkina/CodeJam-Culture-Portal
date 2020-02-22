@@ -1,11 +1,11 @@
 export const TRANSLATE = {
-  dataRU: {
+  RU: {
     buttonContent: 'Узнать больше',
   },
-  dataEN: {
+  EN: {
     buttonContent: 'learn more',
   },
-  dataBE: {
+  BE: {
     buttonContent: 'Даведацца больш',
   }
 };
