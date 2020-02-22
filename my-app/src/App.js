@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Photographer from './components/Photographer/Photographer';
+import PhotographersList from './components/PhotographersList/PhotographersList';
+
 
 function App() {
   return (
     <div className="App">
-      <Photographer id='0' lang='ru' />
+      <PhotographersList />   
     </div>
   );
 }
