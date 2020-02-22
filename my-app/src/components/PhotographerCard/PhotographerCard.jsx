@@ -3,7 +3,13 @@ import { Card, Button } from 'react-bootstrap';
 import './PhotographerCard.css';
 
 
-function PhotographerCard({name, shortDescription, photo, years}) {  
+function PhotographerCard({
+  name,
+  shortDescription,
+  photo,
+  years,
+  buttonContent,
+}) {  
   return ( 
     <Card className="card-photographer">
       <div className="photo">
@@ -13,7 +19,7 @@ function PhotographerCard({name, shortDescription, photo, years}) {
         <Card.Title>{name}</Card.Title>
         <Card.Text className="card-text_italic">{years}</Card.Text>
         <Card.Text>{shortDescription}</Card.Text>
-        <Button  variant="primary" >Learn more</Button>
+        <Button  className="button">{buttonContent}</Button>
       </Card.Body>
     </Card>
   )

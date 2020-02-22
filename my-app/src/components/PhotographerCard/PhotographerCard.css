@@ -27,8 +27,8 @@
     padding-bottom: 15px;
 }
 
-.h5 {
-    font-weight: 700 !important;
+.h5.card-title {
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -49,6 +49,6 @@
     font-size: 14px;
 }
 
-.btn-primary {
+.btn-primary.button {
     background-color: #1890FF;
 }
