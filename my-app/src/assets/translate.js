@@ -3,7 +3,7 @@ export const TRANSLATE = {
     buttonContent: 'Узнать больше',
   },
   EN: {
-    buttonContent: 'learn more',
+    buttonContent: 'Learn more',
   },
   BE: {
     buttonContent: 'Даведацца больш',
