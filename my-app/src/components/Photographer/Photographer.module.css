@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5em;
+  align-items: center;
+  margin: 0 10px 15px 10px;
+}
+
+img {
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.info {
+  text-align: justify;
+}
+
+h2 {
+  text-align: initial;
+}
+
+.years {
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  img {
+    max-width: 300px;
+  }
+
+  .main {
+    align-items: initial;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    display: block;
+  }
+}

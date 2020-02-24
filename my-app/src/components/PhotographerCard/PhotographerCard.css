@@ -1,0 +1,54 @@
+.card-photographer {
+    margin: 20px;
+    padding: 20px 10px;
+    width: 300px;
+}
+
+.card-photographer__photo {
+    border-radius: 5px;  
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.card-title {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.h5 {
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.card-text {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    text-align: center;
+}
+
+.card-text_italic {
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #1890FF;
+}
