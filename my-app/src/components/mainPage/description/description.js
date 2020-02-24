@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./description.css";
 
-import mainPageData from './infoForDescription';
+import mainPageData from './mainPageContent';
 
 const Description = () => {
   return (

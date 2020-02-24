@@ -1,5 +1,6 @@
 .col-md-4 {
   margin: 0 auto;
+  display: flex;
 }
 
 .border {
@@ -9,15 +10,25 @@
   color: #ffffff;
 }
 
-.col-md-4 {
-  display: flex;
-}
-
 .author-photo-container {
   margin-right: 20px;
+  max-width: 400px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 555px) {
+  .col-md-4 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .author-photo-container {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 879px) and (min-width: 767px){
   .col-md-4 {
     display: flex;
     flex-direction: column;

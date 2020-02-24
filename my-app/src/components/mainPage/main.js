@@ -4,7 +4,6 @@ import "./main.css";
 
 import Description from "./description";
 import photographersData from '../../assets/photographersData';
-import photo from '../../assets/phot.jpeg';
 
 class MainPage extends Component {
 
@@ -16,10 +15,11 @@ class MainPage extends Component {
 
     render() {
       const nameOfRubric = 'Автор дня'; 
-      const nameOfAuthor = photographersData[2].dataRU.name;
-      const summary = photographersData[2].dataRU.summary;
+      const nameOfAuthor = photographersData[this.chooseDate()].dataRU.name;
+      const summary = photographersData[this.chooseDate()].dataRU.summary;
+      const photo = photographersData[this.chooseDate()].photo;
       const learnMoreBtn = 'Узнать больше »';
-      
+
       return (
         <Fragment>
           <div className="jumbotron">
@@ -31,7 +31,7 @@ class MainPage extends Component {
             <div>
               <img className="author-photo-container" src={photo}></img>
             </div>
-            <div>
+            <div id='info-about-author'>
               <h2>{nameOfRubric}</h2>
               <h5>{nameOfAuthor}</h5> 
               <p>{summary}</p>
@@ -44,7 +44,5 @@ class MainPage extends Component {
       );
     }
   }
-
-  // Заменить в Авторе дня индекс на результат работы метода choose date 
   
   export default MainPage;
