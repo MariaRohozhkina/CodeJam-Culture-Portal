@@ -1,7 +1,8 @@
-.app{
+.content{
   margin: 0;
   font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
   max-width:1200px;
+  margin: 0 auto;
 }
 
 code {
