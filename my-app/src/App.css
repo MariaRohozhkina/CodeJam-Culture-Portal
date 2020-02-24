@@ -1,1 +1,10 @@
+.app{
+  margin: 0;
+  font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
+  max-width:1200px;
+}
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
