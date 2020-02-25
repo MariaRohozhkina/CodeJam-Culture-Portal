@@ -1,11 +1,20 @@
-import denisAva from './avatars/denis.png';
+import denisAva from './avatars/denis.jpg';
 import daniyarAva from './avatars/daniyar.jpeg';
-import alexAva from './avatars/alex.png';
+import alexAva from './avatars/alex.jpg';
 import irisAva from './avatars/iris.png';
 import kseniyaAva from './avatars/kseniya.jpeg';
 import mariaAva from './avatars/maria.jpeg';
 
 const teamInfo = [
+  [
+    {
+      name: 'Aliaksandra Mikhalchanka',
+      info:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      github: 'https://github.com/Alex89889',
+      avatar: alexAva,
+    },
+  ],
   [
     {
       name: 'Daniyar Ketebay',
@@ -26,6 +35,15 @@ const teamInfo = [
   ],
   [
     {
+      name: 'Irina Stepanova',
+      info:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      github: 'https://github.com/missirisshoi',
+      avatar: irisAva,
+    },
+  ],
+  [
+    {
       name: 'Ksenia Yatskevich',
       info:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
@@ -40,24 +58,6 @@ const teamInfo = [
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
       github: 'https://github.com/MariaRohozhkina',
       avatar: mariaAva,
-    },
-  ],
-  [
-    {
-      name: 'Aliaksandra Mikhalchanka',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
-      github: 'https://github.com/Alex89889',
-      avatar: alexAva,
-    },
-  ],
-  [
-    {
-      name: 'Iris Shoi',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
-      github: 'https://github.com/missirisshoi',
-      avatar: irisAva,
     },
   ],
 ];

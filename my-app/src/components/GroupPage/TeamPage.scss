@@ -1,3 +1,9 @@
+$team-font: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+
+.team-header {
+  font-family: $team-font;
+}
+
 .team-page {
   margin: 100px auto;
 }
@@ -6,8 +12,22 @@
   height: 280px;
 }
 
+.team-card-title {
+  font-family: $team-font;
+  font-weight: 600;
+}
+
 .team-card {
   -webkit-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
   -moz-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
   box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
+}
+
+.team-github-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(./GitHub-Mark-32px.png);
+  background-repeat: no-repeat;
 }
