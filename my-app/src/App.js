@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import TeamPage from './components/GroupPage/TeamPage';
+import MainPage from './components/mainPage/main';
+import PhotographersList from './components/PhotographersList/PhotographersList';
 
 function App() {
   return (
-    <div className="App container">
-      <TeamPage />
+    <div className="App">
+      <MainPage />
     </div>
   );
 }
