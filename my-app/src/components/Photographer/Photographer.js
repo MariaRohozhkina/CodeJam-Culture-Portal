@@ -1,16 +1,16 @@
 import React from 'react';
 import photographerStyle from './Photographer.module.css';
 import photographerData from '../../assets/photographersData';
+import { TRANSLATE } from '../../assets/translate';
 import {
-  // Link,
+  Link,
   useParams,
-  // useLocation,
 } from "react-router-dom";
 
 function Photographer(props) {
   const { id } = useParams();
   const lang = props.lang;
-  // return props.id;
+  
   return (
     <div className = {photographerStyle.wrapper}>
       <div className = {photographerStyle.main}>
@@ -22,6 +22,7 @@ function Photographer(props) {
           <p>{photographerData[id][lang].info}</p>
         </div>
       </div>
+      <p><Link to="/">{TRANSLATE[lang].backToList}</Link></p>
     </div>
   )
 }
