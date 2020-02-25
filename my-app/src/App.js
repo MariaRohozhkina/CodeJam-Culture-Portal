@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import './App.css';
 import MainPage from './components/mainPage/main';
-import PhotographersList from './components/PhotographersList/PhotographersList';
+// import PhotographersList from './components/PhotographersList/PhotographersList';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
 
 class App extends Component {
