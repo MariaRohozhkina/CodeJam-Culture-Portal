@@ -1,18 +1,22 @@
 import React from 'react';
-import  AuthorCard from '../PhotographerCard/PhotographerCard';
+import PhotographerCard from '../PhotographerCard/PhotographerCard';
 import photographersData from '../../assets/photographersData';
+import { TRANSLATE } from '../../assets/translate';
 import './PhotographersList.css';
 
-function PhotographersList() {
+function PhotographersList({ lang }) {  
   return (    
     <section className="content">
       <div className="wrapper">
         {photographersData.map((card) => (
-        <AuthorCard 
+        <PhotographerCard 
+          key = {card.id}
+          lang={lang}
           photo= {card.photo}
-          years={card.dataRU.years}
-          name={card.dataRU.name}
-          shortDescription={card.dataRU.summary}
+          years={card[lang].years}
+          name={card[lang].name}
+          shortDescription={card[lang].summary}
+          buttonContent={TRANSLATE[lang].buttonContent}
         />
         ))}
       </div>
