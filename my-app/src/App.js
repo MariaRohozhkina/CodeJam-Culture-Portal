@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
 import './App.css';
+import MainPage from './components/mainPage/main';
 import PhotographersList from './components/PhotographersList/PhotographersList';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
-
 
 class App extends Component {
   constructor(props) {
@@ -25,9 +25,7 @@ class App extends Component {
           lang = {this.state.lang}
           handlerChangeLanguage = {this.handlerChangeLanguage}
         />
-        <PhotographersList 
-          lang = {this.state.lang}
-        />   
+        <MainPage />        
       </div>
     );
   }
