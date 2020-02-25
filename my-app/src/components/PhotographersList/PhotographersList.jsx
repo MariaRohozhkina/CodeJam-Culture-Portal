@@ -4,13 +4,16 @@ import photographersData from '../../assets/photographersData';
 import { TRANSLATE } from '../../assets/translate';
 import './PhotographersList.css';
 
+
+
 function PhotographersList({ lang }) {  
-  return (    
+  return ( 
     <section className="content">
       <div className="wrapper">
         {photographersData.map((card) => (
         <PhotographerCard 
           key = {card.id}
+          id = {card.id}
           lang={lang}
           photo= {card.photo}
           years={card[lang].years}
@@ -18,9 +21,10 @@ function PhotographersList({ lang }) {
           shortDescription={card[lang].summary}
           buttonContent={TRANSLATE[lang].buttonContent}
         />
-        ))}
+        ))}    
+      
       </div>
-    </section>
+    </section>    
   );
 }
 
