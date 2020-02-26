@@ -1,20 +1,24 @@
 import React from 'react';
-import photographerStyle from './Photographer.module.css';
-import photographerData from '../../assets/photographersData';
+import './Photographer.css';
+import photographersData from '../../assets/photographersData';
+import Timeline from '../Timeline/Timeline';
 
 function Photographer(props) {
   const id = props.id;
   return (
-    <div className = {photographerStyle.wrapper}>
-      <div className = {photographerStyle.main}>
-        <img src = {photographerData[id].photo} alt={photographerData[id].dataRU.name}/>
-        <div className = {photographerStyle.info}>
-          <h2>{photographerData[id].dataRU.name}</h2>
-          <p><span className = {photographerStyle.years}>{photographerData[id].dataRU.years}</span></p>
-          <p>{photographerData[id].dataRU.summary}</p>
-          <p>{photographerData[id].dataRU.info}</p>
+    <div>
+      <div className = 'wrapper'>
+        <div className = 'main'>
+          <img src = {photographersData[id].photo} alt={photographersData[id].RU.name}/>
+          <div className = 'info'>
+            <h2>{photographersData[id].RU.name}</h2>
+            <p><span className = 'years'>{photographersData[id].RU.years}</span></p>
+            <p>{photographersData[id].RU.summary}</p>
+            <p>{photographersData[id].RU.info}</p>
+          </div>
         </div>
       </div>
+      <Timeline id={id}/>
     </div>
   )
 }
