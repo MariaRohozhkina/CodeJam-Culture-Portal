@@ -1,6 +1,7 @@
 import React from 'react';
-import photographerStyle from './Photographer.module.css';
-import photographerData from '../../assets/photographersData';
+import './Photographer.css';
+import photographersData from '../../assets/photographersData';
+import Timeline from '../Timeline/Timeline';
 import { TRANSLATE } from '../../assets/translate';
 import {
   Link,
@@ -12,16 +13,19 @@ function Photographer(props) {
   const lang = props.lang;
   
   return (
-    <div className = {photographerStyle.wrapper}>
-      <div className = {photographerStyle.main}>
-        <img src = {photographerData[id].photo} alt={photographerData[id][lang].name}/>
-        <div className = {photographerStyle.info}>
-          <h2>{photographerData[id][lang].name}</h2>
-          <p><span className = {photographerStyle.years}>{photographerData[id][lang].years}</span></p>
-          <p>{photographerData[id][lang].summary}</p>
-          <p>{photographerData[id][lang].info}</p>
+    <div>
+      <div className = 'wrapper'>
+        <div className = 'main'>
+          <img src = {photographersData[id].photo} alt={photographersData[id][lang].name}/>
+          <div className = 'info'>
+            <h2>{photographersData[id][lang].name}</h2>
+            <p><span className = 'years'>{photographersData[id][lang].years}</span></p>
+            <p>{photographersData[id][lang].summary}</p>
+            <p>{photographersData[id][lang].info}</p>
+          </div>
         </div>
       </div>
+      <Timeline id={id}/>
       <p><Link to="/">{TRANSLATE[lang].backToList}</Link></p>
     </div>
   )
