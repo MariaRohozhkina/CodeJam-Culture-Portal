@@ -26,7 +26,7 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <Navigation />
+                    <Navigation lang = {lang}/>
                     <LanguageSwitch 
                         lang = {lang}
                         handlerChangeLanguage = {this.handlerChangeLanguage}
