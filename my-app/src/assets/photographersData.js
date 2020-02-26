@@ -2,10 +2,10 @@ const photographersData = [
 	{
     id: 0,
     surname: 'Anempodistov',
-		dataRU: {
+		RU: {
 			name: 'Анемподистов Михаил Владимирович',
-      years: '16 марта 1964 - 24 января 2018',
-      birthCity: 'Минск',
+			years: '16 марта 1964 - 24 января 2018',
+			birthCity: 'Минск',
 			mapCity: 'Минск',
 			summary: 'белорусский художник, дизайнер, поэт, культуролог, искусствовед, фотограф',
 			info: 'Работал в жанрах прикладной графики, иллюстрации, плаката, фотографии: начинал с плаката, после заинтересовался графикой, а позже и фотографией. Участвовал в коллективных и персональных выставках в Беларуси и за рубежом.',
@@ -35,7 +35,7 @@ const photographersData = [
 				'В 2011 дебютировал в качестве фотографа с фотовыставкой «Under Ground»: в фотографиях сосредоточился на белорусских овощах, чтобы таким способом открыть более глубокое измерение белорусской культуры. Выбор своей тематики объяснил тем, что белорусы, как овощи, скрывают интересные вещи в себе, не показывают их вовне — нация заглубленных в себя людей: выглядят обычно, а внутри фантастические — под испачканной (от почвы) кожурой картофеля спрятано «золотое солнце».'
 			]
 		},
-		dataBE: {
+		BE: {
 			name: 'Анемпадыстаў Міхаіл Уладзіміравіч',
 			years: '16 сакавіка 1964 - 24 студзеня 2018',
 			birthCity: 'Мінск',
@@ -68,7 +68,7 @@ const photographersData = [
 				'У 2011 г. дэбютаваў як фатограф, прэзентаваўшы фотавыстаўку «Under Ground»: у фотапрацах засяродзіўся на беларускай гародніны, каб такім спосабам адкрыць глыбейшае вымярэнне беларускай культуры. Выбар сваёй тэматыкі патлумачыў тым, што беларусы, на думку Анемпадыстава, як гародніна, хаваюць цікавыя рэчы ў сабе, не паказваюць іх навонкі — нацыя заглыбленых у сябе людзей: выглядаюць звычайна, а ўнутры фантастычныя — пад запэцканай (ад глебы) кажурой бульбы схавана «залатое сонца».'
 			]
 		},
-		dataEN: {
+		EN: {
 			name: 'Anempodistov Mikhail Vladimirovich',
 			years: 'March 16, 1964 - January 24, 2018',
 			birthCity: 'Minsk',
@@ -117,7 +117,7 @@ const photographersData = [
 	{
     id: 1,
     surname: 'Bazan',
-		dataRU: {
+		RU: {
 			name: 'Владимир Сергеевич Базан',
 			years: 'род. 21 октября 1953',
 			birthCity: 'Унеча',
@@ -151,7 +151,7 @@ const photographersData = [
 				'Владимир является автором фотоальбомов «Витебск» (2004, 2006), «Нинбург» (2007), «Витебск» совместно с А. Глебовым (2007), а также книги «Марк Шагал и Витебск» с Л. Хмельницкой и А. Вышка (2007).'
 			]
 		},
-		dataBE: {
+		BE: {
 			name: 'Уладзімір Сяргеевіч Базан',
 			years: 'нар. 21 кастрычніка 1953',
 			birthCity: 'Унеча',
@@ -185,7 +185,7 @@ const photographersData = [
 				'Аўтар фотаальбомаў «Віцебск» (2004, 2006), «Нінбург» (2007), «Віцебск» сумесна з А. Глебавым (2007), а таксама кнігі «Марк Шагал і Віцебск» з Л. Хмяльніцкай і А. Вышкам (2007).'
 			]
 		},
-		dataEN: {
+		EN: {
 			name: 'Vladimir Bazan',
 			years: 'born 21 October 1953',
 			birthCity: 'Unecha',
@@ -219,7 +219,8 @@ const photographersData = [
 				'Vladimir is the author of photo albums "Vitebsk" (2004, 2006), "Ninburg" (2007), "Vitebsk" together with A. Glebov (2007), as well as the book "Mark Chagall and Vitebsk" with L. Khmelnitskaya and A. Vyshka (2007).'
 			]
 		},
-		photo: 'https://parizhsk.fr/wp-content/uploads/2017/02/vladimir-bazan-2011.jpg',
+		// photo: 'https://parizhsk.fr/wp-content/uploads/2017/02/vladimir-bazan-2011.jpg',
+		photo: 'http://art14.com.ua/wp-content/uploads/2017/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2017-05-25-%D0%B2-13.54.251.png',
 		photogallery: [
 			'http://www.photoline.ru/critic/picpart/1226/1226601635.jpg',
 			'http://www.photoline.ru/critic/picpart/1230/1230276553.jpg',
@@ -234,7 +235,7 @@ const photographersData = [
 	{
     id: 2,
     surname: 'Bulgak',
-		dataRU: {
+		RU: {
 			name: 'Ян Бу́лгак',
 			years: '6 октября 1876 - 4 февраля 1950',
 			birthCity: 'Осташин',
@@ -302,7 +303,7 @@ const photographersData = [
 				'В 1935 году издал книгу про свое путешествие из Вильно на озеро Нарочь с 38 фотоснимками.'
 			]
 		},
-		dataBE: {
+		BE: {
 			name: 'Ян Булгак',
 			years: '6 кастрычніка 1876 - 4 лютага 1950',
 			birthCity: 'Асташын',
@@ -370,7 +371,7 @@ const photographersData = [
 				'У 1935 годзе выдаў кнігу пра сваё падарожжа з Вільні на возера Нарач з 38 фотаздымкамі.'
 			]
 		},
-		dataEN: {
+		EN: {
 			name: 'Jan Bułhak',
 			years: 'October 6, 1876 - February 4, 1950',
 			birthCity: 'Ostashin',
@@ -452,7 +453,7 @@ const photographersData = [
 	{
     id: 3,
     surname: '',
-		dataRU: {
+		RU: {
 			name: '',
 			years: '',
 			birthCity: '',
@@ -487,7 +488,7 @@ const photographersData = [
 				''
 			]
 		},
-		dataBE: {
+		BE: {
 			name: '',
 			years: '',
 			birthCity: '',
@@ -522,7 +523,7 @@ const photographersData = [
 				''
 			]
 		},
-		dataEN: {
+		EN: {
 			name: '',
 			years: '',
 			birthCity: '',

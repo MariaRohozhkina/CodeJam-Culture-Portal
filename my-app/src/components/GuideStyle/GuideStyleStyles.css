@@ -1,0 +1,115 @@
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+	margin:50px;
+}
+.sg-section {
+    margin-bottom: 32px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+sg-h1, .sg-h2, .sg-h3 {
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+h2, .h2 {
+    font-size: 31px;
+}
+
+h4, .h4 {
+    font-size: 21px;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sg-lg {
+    width: 140px;
+    height: 100px;
+}
+
+.sg-color {
+    background: #fff;
+    border: 1px solid #b3b3b3;
+    display: inline-block;
+    height: 80px;
+    margin: 0 .5em .5em 0;
+    padding: 5px;
+    position: relative;
+    width: 100px;
+}
+
+.sg-color-swatch {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.sg-color-swatch span {
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 5px;
+    color: #fff;
+    font-size: .8em;
+    margin: 0;
+    opacity: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 88px;
+}
+
+.sg-color-swatch {
+    background: #1890ff;
+}
+.sg-gray-lighter .sg-color-swatch {
+    background: #212529;
+}
+.sg-gray-light .sg-color-swatch  {
+    background: #DFE1E4;
+}
+
+.sg-secondary .sg-color-swatch  {
+    background: #000;
+}
+.sg-secondary-light .sg-color-swatch  {
+    background: #4d4d4d;
+}
+.sg-secondary-button .sg-color-swatch  {
+    background: #fff;
+}
+
+.sg-font-primary {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sg-font {
+    font-size: 1.8em;
+    padding: 0 0 .2em 0;
+	color: #4d4d4d;
+}
+p {
+    margin: 0 0 10px;
+}
+
+#sg-adress a{
+	color: #4d4d4d;
+}
+#sg-adress a:hover, #sg-adress a:focus {
+	color: #007bff;
+}
+
+.btn-example{
+	margin-top:20px;
+}
