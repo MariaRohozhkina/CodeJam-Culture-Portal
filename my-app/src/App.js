@@ -1,46 +1,44 @@
-import React, { Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
-import PhotographersList from './components/PhotographersList/PhotographersList';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import GroupPage from './components/GroupPage/TeamPage';
+import StyleGuide from './components/GuideStyle/';
+import Worklog from './components/Worklog/';
+import Photographers from './components/PhotographersList/PhotographersList';
+import MainPage from './components/mainPage/main';
 import Photographer from './components/Photographer/Photographer';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
-import { BrowserRouter as Router,
-  Route,
-} from 'react-router-dom';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-    this.handlerChangeLanguage = this.handlerChangeLanguage.bind(this);
-    this.state = {
-      lang: 'EN',
+    state = {
+        lang: 'EN',
     }
-  }
 
-  handlerChangeLanguage(e) {
-    this.setState({lang: e.target.value});
-  }
+    handlerChangeLanguage = (e) => {
+        this.setState({lang: e.target.value});
+    }
 
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <LanguageSwitch 
-            lang = {this.state.lang}
-            handlerChangeLanguage = {this.handlerChangeLanguage}
-          />
-          <Route exact path="/">
-            <PhotographersList
-              lang={this.state.lang}
-            />
-          </Route>
-          <Route path="/photographer/:id">
-            <Photographer 
-              lang={this.state.lang}
-            />
-          </Route>
-        </div>
-      </Router>      
+    render() {
+        const { lang } = this.state;
+
+        return (
+            <Router>
+                <div className="App">
+                    <LanguageSwitch 
+                        lang = {lang}
+                        handlerChangeLanguage = {this.handlerChangeLanguage}
+                    />
+                    <Switch>
+                        <Route exact path='/' render={()=><MainPage lang={lang}/>} />
+                        <Route path='/photographers' render={()=><Photographers lang={lang}/>} />
+                        <Route path='/team' render={()=><GroupPage lang={lang}/>} />
+                        <Route path='/worklog' render={()=><Worklog lang={lang}/>} />
+                        <Route path='/styleguide' render={()=><StyleGuide lang={lang}/>} />
+                        <Route path="/photographer/:id" render={()=><Photographer lang={lang}/>} />
+                    </Switch>
+                </div>
+            </Router>
     );
   }
 }
