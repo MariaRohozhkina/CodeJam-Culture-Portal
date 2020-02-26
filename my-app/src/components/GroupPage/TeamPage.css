@@ -1,7 +1,5 @@
-$team-font: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
-
 .team-header {
-  font-family: $team-font;
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 }
 
 .team-page {
@@ -13,7 +11,7 @@ $team-font: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 }
 
 .team-card-title {
-  font-family: $team-font;
+  font-family: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 600;
 }
 

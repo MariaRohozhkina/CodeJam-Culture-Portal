@@ -25,8 +25,8 @@ function Photographer(props) {
           </div>
         </div>
       </div>
-      <Timeline id={id} lang={lang}/>
-      <p><Link to="/">{TRANSLATE[lang].backToList}</Link></p>
+      <Timeline id={id}/>
+      <p><Link to="/photographers">{TRANSLATE[lang].backToList}</Link></p>
     </div>
   )
 }
