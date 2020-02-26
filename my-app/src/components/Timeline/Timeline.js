@@ -8,8 +8,9 @@ import { faCameraRetro } from '@fortawesome/free-solid-svg-icons'
 
 function Timeline(props) {
   const id = props.id;
+  const lang = props.lang;
   return <VerticalTimeline className='timeline'>
-    {photographersData[id].RU.timeline.map((event) => ( 
+    {photographersData[id][lang].timeline.map((event) => ( 
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date={event.date}
