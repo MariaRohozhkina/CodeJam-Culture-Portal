@@ -9,6 +9,7 @@ import Photographers from './components/PhotographersList/PhotographersList';
 import MainPage from './components/mainPage/main';
 import Photographer from './components/Photographer/Photographer';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
+import Navigation from './components/navigation/';
 
 class App extends Component {
     state = {
@@ -25,6 +26,7 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
+                    <Navigation />
                     <LanguageSwitch 
                         lang = {lang}
                         handlerChangeLanguage = {this.handlerChangeLanguage}
