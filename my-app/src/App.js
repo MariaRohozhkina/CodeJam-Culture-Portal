@@ -1,8 +1,11 @@
 import React, { Component} from 'react';
 import './App.css';
-import MainPage from './components/mainPage/main';
-// import PhotographersList from './components/PhotographersList/PhotographersList';
+import PhotographersList from './components/PhotographersList/PhotographersList';
+import Photographer from './components/Photographer/Photographer';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
+import { BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -20,13 +23,24 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <LanguageSwitch 
-          lang = {this.state.lang}
-          handlerChangeLanguage = {this.handlerChangeLanguage}
-        />
-        <MainPage />        
-      </div>
+      <Router>
+        <div className="App">
+          <LanguageSwitch 
+            lang = {this.state.lang}
+            handlerChangeLanguage = {this.handlerChangeLanguage}
+          />
+          <Route exact path="/">
+            <PhotographersList
+              lang={this.state.lang}
+            />
+          </Route>
+          <Route path="/photographer/:id">
+            <Photographer 
+              lang={this.state.lang}
+            />
+          </Route>
+        </div>
+      </Router>      
     );
   }
 }

@@ -1,9 +1,14 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import './PhotographerCard.css';
+import {
+  Link,
+} from "react-router-dom";
+// import Photographer from '../Photographer/Photographer';
 
 
 function PhotographerCard({
+  id,
   name,
   shortDescription,
   photo,
@@ -19,7 +24,7 @@ function PhotographerCard({
         <Card.Title>{name}</Card.Title>
         <Card.Text className="card-text_italic">{years}</Card.Text>
         <Card.Text>{shortDescription}</Card.Text>
-        <Button  className="button">{buttonContent}</Button>
+        <Link to={`/photographer/${id}`}><Button  className="button">{buttonContent}</Button></Link>
       </Card.Body>
     </Card>
   )
