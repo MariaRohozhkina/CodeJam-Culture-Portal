@@ -15,8 +15,8 @@ class MainPage extends Component {
 
     render() {
       const nameOfRubric = 'Автор дня'; 
-      const nameOfAuthor = photographersData[this.chooseDate()].dataRU.name;
-      const summary = photographersData[this.chooseDate()].dataRU.summary;
+      const nameOfAuthor = photographersData[this.chooseDate()].RU.name;
+      const summary = photographersData[this.chooseDate()].RU.summary;
       const photo = photographersData[this.chooseDate()].photo;
       const learnMoreBtn = 'Узнать больше »';
 
@@ -29,7 +29,7 @@ class MainPage extends Component {
           </div>
           <div className="col-md-4">
             <div>
-              <img className="author-photo-container" src={photo}></img>
+              <img className="author-photo-container" src={photo} alt="Photographer"></img>
             </div>
             <div id='info-about-author'>
               <h2>{nameOfRubric}</h2>
