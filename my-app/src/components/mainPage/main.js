@@ -35,9 +35,11 @@ class MainPage extends Component {
               <h2>{nameOfRubric}</h2>
               <h5>{nameOfAuthor}</h5> 
               <p>{summary}</p>
-              <p className='border'>
-                <a className="btn btn-default" role="button">{learnMoreBtn}</a>
-              </p>
+              <Link to={`/photographer/${id}`}>
+                <p className='border'>
+                  <a className="btn btn-default" role="button">{learnMoreBtn}</a>
+                </p>
+              </Link>
             </div>
           </div>
         </Fragment>
