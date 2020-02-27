@@ -7,6 +7,7 @@ import {
   Link,
   useParams,
 } from "react-router-dom";
+import PhotoGallery from '../PhotoGallery/PhotoGallery';
 
 function Photographer(props) {
   const { id } = useParams();
@@ -14,19 +15,24 @@ function Photographer(props) {
   
   return (
     <div>
-      <div className = 'wrapper'>
+      <div className = 'main-wrapper'>
         <div className = 'main'>
           <img src = {photographersData[id].photo} alt={photographersData[id][lang].name}/>
           <div className = 'info'>
             <h2>{photographersData[id][lang].name}</h2>
             <p><span className = 'years'>{photographersData[id][lang].years}</span></p>
-            <p>{photographersData[id][lang].summary}</p>
+            <p>{photographersData[id][lang].summary}.</p>
             <p>{photographersData[id][lang].info}</p>
           </div>
         </div>
       </div>
-      <Timeline id={id}/>
-      <p><Link to="/photographers">{TRANSLATE[lang].backToList}</Link></p>
+      <Timeline id={id} lang={lang}/>
+      <PhotoGallery id={id}/>
+      <div className='works'>
+        <h2 className='worksH2'>{photographersData[id][lang].name}{TRANSLATE[lang].photographerWorks}</h2>
+        {photographersData[id][lang].works.map((work) => <p>{work}</p>)}
+      </div>
+      <p className='back'><Link to="/photographers">{TRANSLATE[lang].backToList}</Link></p>
     </div>
   )
 }

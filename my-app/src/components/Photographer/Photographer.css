@@ -1,4 +1,4 @@
-.wrapper {
+.main-wrapper {
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -26,6 +26,23 @@ h2 {
 
 .years {
   font-style: italic;
+}
+
+.works {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.worksH2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.back {
+  margin: 20px auto;
+  max-width: 1200px;
+  justify-content: center;
+  display: flex;
 }
 
 @media (max-width: 900px) {

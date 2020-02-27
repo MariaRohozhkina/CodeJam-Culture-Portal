@@ -1,0 +1,20 @@
+.gallery {
+  overflow: hidden;
+  max-width: 1204px;
+  margin: 25px auto;
+}
+
+.image {
+  background-color: #eee;
+  box-sizing: border-box;
+  float: left;
+  margin: 2px;
+  overflow: hidden;
+  padding-bottom: 16%;
+  position: relative;
+  width: calc(25% - 4px);
+}
+
+.image:hover {
+  opacity: 0.9;
+}
