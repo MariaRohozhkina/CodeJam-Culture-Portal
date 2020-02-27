@@ -1,5 +1,5 @@
 import React from 'react';
-import './TeamPage.scss';
+import './TeamPage.css';
 import { teamInfo } from './teamInfo';
 
 export default function TeamPage() {

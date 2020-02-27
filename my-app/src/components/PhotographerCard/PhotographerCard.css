@@ -24,11 +24,13 @@
 .card-title {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-align: center;
+    color: #212529;
     padding-bottom: 15px;
 }
 
-.h5 {
-    font-weight: 700 !important;
+.h5.card-title {
+    font-weight: 700;
+    color: #212529;
     text-transform: uppercase;
 }
 
@@ -40,6 +42,7 @@
 
 .card-text {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    color: #212529;
     text-align: center;
 }
 
@@ -49,6 +52,7 @@
     font-size: 14px;
 }
 
-.btn-primary {
+.btn-primary.button {
+    border-radius: 4px;
     background-color: #1890FF;
 }
