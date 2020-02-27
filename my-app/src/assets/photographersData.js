@@ -521,7 +521,7 @@ const photographersData = [
 			birthCity: 'Мінск',
 			mapCity: 'Мінск',
 			summary: 'Беларускі фотамастак, навуковец, вынаходнік, публіцыст, педагог',
-			info: 'Паходзіў з шляхецкага роду герба «Ляліва».  У верасні-снежні 2002 г. у Нацыянальным музеі гісторыі і культуры Беларусі адбылася выстаўка твораў Дашкевіча «Зачараваны Беларуссю».',
+			info: 'Паходзіў з шляхецкага роду герба «Ляліва». Леў Дашкевіч першым у Беларусі распрацаваў і стаў чытаць курс лекцый па фатаграфіі (у Мінскім інстытуце народнай адукацыі), быў адным з першых прадстаўнікоў піктаральнай (маляўнічай) фатаграфіі, працаваў у розных працаёмкіх фотатэхніках. У верасні-снежні 2002 г. у Нацыянальным музеі гісторыі і культуры Беларусі адбылася выстаўка твораў Дашкевіча «Зачараваны Беларуссю».',
 			timeline: [
 				{
 					date: '1882 - 1896',
@@ -584,7 +584,7 @@ const photographersData = [
 			birthCity: 'Minsk',
 			mapCity: 'Minsk',
 			summary: 'Belarusian photographer, scientist, inventor, publicist, and teacher',
-			info: 'A descendant from one of the szlachta families, Leliwa coat of arms.  In September-December 2002, the national Museum of history and culture of Belarus hosted an exhibition of his works «Charmed by Belarus».',
+			info: 'A descendant from one of the szlachta families, Leliwa coat of arms. Lev Dashkevich was the first in Belarus to develop and teach a course of lectures on photography (at the Minsk Institute of public education), was one of the first representatives of pictorial (pictorial) photography, and worked in various labor-intensive photo techniques. In September-December 2002, the national Museum of history and culture of Belarus hosted an exhibition of his works «Charmed by Belarus».',
 			timeline: [
 				{
 					date: '1882 - 1896',
@@ -834,10 +834,10 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Выставки: «100 фотографий Владимира Сапогова» к 30-летию объединения «Талака» (Минск, декабрь 2015)',
-				'«Праздники, которые пробуждали национальное сознание» (Орша, июнь 2016)',
-				'«От культурных акций, до акций политического протеста» (Чернигов, галерея современного искусства «Пласт-арт», июль-август 2016)',
-				'«Праздник белорусской воинской славы» (Орша-Минск, август-сентябрь 2016)'
+				'Выставки: «100 фотографий Владимира Сапогова» к 30-летию объединения «Талака» (Минск, декабрь 2015),',
+				'«Праздники, которые пробуждали национальное сознание» (Орша, июнь 2016),',
+				'«От культурных акций, до акций политического протеста» (Чернигов, галерея современного искусства «Пласт-арт», июль-август 2016),',
+				'«Праздник белорусской воинской славы» (Орша-Минск, август-сентябрь 2016).'
 			]
 		},
 		BE: {
@@ -870,10 +870,10 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Выставы: «100 фотаздымкаў Уладзіміра Сапагова» да 30-годдзя аб\'яднання «Талака» (Мінск, снежань 2015)',
-				'«Святы, якія абуджалі нацыянальную свядомасць» (Орша, чэрвень 2016)',
-				'«Ад культурніцкіх акцый, да акцый палітычнага пратэсту» (Чарнігаў, галерэя сучаснага мастацтва «Пласт-арт», ліпень-жнівень 2016)',
-				'«Свята Беларускай Вайсковай славы» (Орша-Мінск, жнівень-верасень 2016)'
+				'Выставы: «100 фотаздымкаў Уладзіміра Сапагова» да 30-годдзя аб\'яднання «Талака» (Мінск, снежань 2015),',
+				'«Святы, якія абуджалі нацыянальную свядомасць» (Орша, чэрвень 2016),',
+				'«Ад культурніцкіх акцый, да акцый палітычнага пратэсту» (Чарнігаў, галерэя сучаснага мастацтва «Пласт-арт», ліпень-жнівень 2016),',
+				'«Свята Беларускай Вайсковай славы» (Орша-Мінск, жнівень-верасень 2016).'
 			]
 		},
 		EN: {
@@ -889,7 +889,7 @@ const photographersData = [
 					fact: 'He was raised in an orphanage in Brest and studied in Moscow. He worked at BAM, at the Belarusfilm film Studio, and in the darkroom of the Minsk tractor plant'
 				},
 				{
-					date: '1980-е',
+					date: '1980s',
 					fact: 'Joined the Renaissance movement'
 				},
 				{
@@ -906,10 +906,10 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Exhibitions: «100 photos of Vladimir Sapogov» for the 30th anniversary of the Talaka Association (Minsk, December 2015)',
-				'«Holidays that awakened the national consciousness» (Orsha, June 2016)',
-				'«From cultural actions to political protest actions» (Chernihiv, Plast-art gallery of modern art, July-August 2016)',
-				'«Celebration of Belarusian military glory» (Orsha-Minsk, August-September 2016)'
+				'Exhibitions: «100 photos of Vladimir Sapogov» for the 30th anniversary of the Talaka Association (Minsk, December 2015),',
+				'«Holidays that awakened the national consciousness» (Orsha, June 2016),',
+				'«From cultural actions to political protest actions» (Chernihiv, Plast-art gallery of modern art, July-August 2016),',
+				'«Celebration of Belarusian military glory» (Orsha-Minsk, August-September 2016).'
 			]
 		},
 		photo: 'https://img.tyt.by/n/balay/09/1/sapahou_light.jpg',
@@ -957,8 +957,8 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Среди произведений: «Браславский мотив» (1982), «Художник Ф. Гумен» (1985), «Народная артистка СССР С. Станюта» (1990), «Вечер» (1991), «Актриса Наталья Аладка» (1992)',
-				'«Летучка» (2000), «Художник Г. Шутов» (2001), «Афганцы» (2005), «Позади целый век...» (2007)',
+				'Среди произведений: «Браславский мотив» (1982), «Художник Ф. Гумен» (1985), «Народная артистка СССР С. Станюта» (1990), «Вечер» (1991), «Актриса Наталья Аладка» (1992).',
+				'«Летучка» (2000), «Художник Г. Шутов» (2001), «Афганцы» (2005), «Позади целый век...» (2007).',
 				'Серии «Старый Витебск» (1971–1975), «Театр» (1975–1985), «Ветераны. Месяц май» (1975–2007), «Художники» (2010) и др.'
 			]
 		},
@@ -992,8 +992,8 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Сярод твораў: «Браслаўскі матыў» (1982), «Мастак Ф. Гумен» (1985) «Народная артыстка СССР С. Станюта» (1990) «Вечар» (1991), «Актрыса Наталля Аладка» (1992)',
-				'«Лятучка» (2000), «Мастак Г. Шутаў» (2001) «Афганцы»(2005), «Ззаду цэлае стагоддзе...» (2007)',
+				'Сярод твораў: «Браслаўскі матыў» (1982), «Мастак Ф. Гумен» (1985) «Народная артыстка СССР С. Станюта» (1990) «Вечар» (1991), «Актрыса Наталля Аладка» (1992).',
+				'«Лятучка» (2000), «Мастак Г. Шутаў» (2001) «Афганцы»(2005), «Ззаду цэлае стагоддзе...» (2007).',
 				'Серыі «Стары Віцебск» (1971-1975), «Тэатр» (1975-1985), «Ветэраны. Месяц май» (1975-2007), «Мастакі» (2010) і інш.'
 			]
 		},
@@ -1027,8 +1027,8 @@ const photographersData = [
 				}
 			],
 			works: [
-				'Among his works: «Braslav Motive» (1982), «Artist F. Gumen» (1985), «People\'s Artist of the USSR S. Stanyuta» (1990), «Evening» (1991), «Actress Natalya Aladka» (1992)',
-				'«Flying» (2000), «Artist G. Shutov» (2001), «Afghans» (2005), «A century has passed...» (2007)',
+				'Among his works: «Braslav Motive» (1982), «Artist F. Gumen» (1985), «People\'s Artist of the USSR S. Stanyuta» (1990), «Evening» (1991), «Actress Natalya Aladka» (1992).',
+				'«Flying» (2000), «Artist G. Shutov» (2001), «Afghans» (2005), «A century has passed...» (2007).',
 				'Series «Old Vitebsk» (1971-1975), «Theater» (1975-1985), «Veterans. The month of May» (1975–2007), «Artists» (2010), etc.'
 			]
 		},
