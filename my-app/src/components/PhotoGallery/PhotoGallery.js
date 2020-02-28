@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
-import photographersData from '../../assets/photographersData';
+import photographersData from '../../constants/photographersData';
 import './PhotoGallery.css';
 import glam from 'glam';
 // @flow
@@ -32,7 +32,7 @@ class PhotoGallery extends Component {
             {images.map(({ src }, j) => (
               <div className='image' onClick={() => this.toggleLightbox(j)} key={src.thumbnail}>
                 <img
-                  alt='photo'
+                  alt='photographer work'
                   src={src}
                   css={{
                     cursor: 'pointer',

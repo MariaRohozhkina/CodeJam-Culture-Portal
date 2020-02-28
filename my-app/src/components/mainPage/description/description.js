@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./description.css";
 
-import mainPageData from '../../../assets/mainPageContent';
+import mainPageData from '../../../constants/mainPageContent';
 
 function Description({ lang }) {
   return (

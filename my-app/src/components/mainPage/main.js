@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import { TRANSLATE } from "../../assets/translate";
+import { TRANSLATE } from "../../constants/translate";
 
 import "./main.css";
 
 import Description from "./description";
-import photographersData from '../../assets/photographersData';
+import photographersData from '../../constants/photographersData';
 
 class MainPage extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class MainPage extends Component {
               <p>{summary}</p>
               <Link to={`/photographer/${id}`}>
                 <p className='border'>
-                  <a className="btn btn-default" role="button">{TRANSLATE[lang].buttonContent}</a>
+                  <button className="btn btn-default">{TRANSLATE[lang].buttonContent}</button>
                 </p>
               </Link>
             </div>
