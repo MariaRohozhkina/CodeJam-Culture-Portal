@@ -38,6 +38,11 @@ h2 {
   padding: 10px 0;
 }
 
+.video-wrapper {
+  max-width: 1200px;
+  margin: 40px auto 30px;
+}
+
 .back {
   margin: 20px auto;
   max-width: 1200px;

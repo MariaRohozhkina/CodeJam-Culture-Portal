@@ -8,6 +8,7 @@ import {
   useParams,
 } from "react-router-dom";
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
 function Photographer(props) {
   const { id } = useParams();
@@ -30,8 +31,15 @@ function Photographer(props) {
       <PhotoGallery id={id}/>
       <div className='works'>
         <h2 className='worksH2'>{photographersData[id][lang].name}{TRANSLATE[lang].photographerWorks}</h2>
-        {photographersData[id][lang].works.map((work) => <p>{work}</p>)}
+        {photographersData[id][lang].works.map((work) => <p key={work}>{work}</p>)}
       </div>
+      {photographersData[id].video !== '' ?
+        (
+          <div className='video-wrapper'>
+            <VideoPlayer src={photographersData[id].video}/>
+          </div>
+        ) : null
+      }
       <p className='back'><Link to="/photographers">{TRANSLATE[lang].backToList}</Link></p>
     </div>
   )

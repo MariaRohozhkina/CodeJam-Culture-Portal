@@ -17,6 +17,7 @@ function Timeline(props) {
         iconStyle={{ background: '#1890FF', color: '#fff' }}
         contentStyle={{ borderTop: '3px solid #1890FF' }}
         icon={<FontAwesomeIcon icon={faCameraRetro} className='awesome'/>}
+        key={event.date}
       >
       <p style={{margin: 0}}>
         {event.fact}

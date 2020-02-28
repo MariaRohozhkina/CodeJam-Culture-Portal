@@ -1,10 +1,11 @@
+// @flow
+// @jsx glam
+/* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import photographersData from '../../assets/photographersData';
 import './PhotoGallery.css';
 import glam from 'glam';
-// @flow
-// @jsx glam
 
 class PhotoGallery extends Component {
   state = {
@@ -30,9 +31,9 @@ class PhotoGallery extends Component {
         {!isLoading ? (
           <div className='gallery'>
             {images.map(({ src }, j) => (
-              <div className='image' onClick={() => this.toggleLightbox(j)} key={src.thumbnail}>
+              <div className='image' onClick={() => this.toggleLightbox(j)} key={src}>
                 <img
-                  alt='photo'
+                  alt={photographersData[id].name}
                   src={src}
                   css={{
                     cursor: 'pointer',
