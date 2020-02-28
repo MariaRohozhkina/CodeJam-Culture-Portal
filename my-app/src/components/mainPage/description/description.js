@@ -2,17 +2,17 @@ import React, { Fragment } from "react";
 
 import "./description.css";
 
-import mainPageData from './mainPageContent';
+import mainPageData from '../../../assets/mainPageContent';
 
-const Description = () => {
+function Description({ lang }) {
   return (
     <Fragment>
       <section className="container">
         <div>
-            <h1>{mainPageData[0].dataRU}</h1>
+            <h1>{mainPageData[lang].title}</h1>
         </div>
         <div>
-            <p>{mainPageData[1].dataRU}</p>
+            <p>{mainPageData[lang].content}</p>
         </div>
       </section>
     </Fragment>
