@@ -30,9 +30,9 @@ class App extends Component {
         <div className="App">
           <header className="header">
             <div className = "wrapper-header">
-						  <div className="logo">
-								<FontAwesomeIcon icon={faCameraRetro} className='awesomeT'/>
-							</div>
+		<div className="logo">
+			<FontAwesomeIcon icon={faCameraRetro} className='awesomeM'/>
+		</div>
               <Navigation lang = {lang}/>   
               <LanguageSwitch 
                 lang = {lang}
