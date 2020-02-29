@@ -3,6 +3,7 @@ import './Photographer.css';
 import photographersData from '../../constants/photographersData';
 import Timeline from '../Timeline/Timeline';
 import { TRANSLATE } from '../../constants/translate';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 import {
   Link,
   useParams,
@@ -15,7 +16,12 @@ function Photographer(props) {
   const lang = props.lang;
   
   return (
-    <div>
+    <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
       <div className = 'main-wrapper'>
         <div className = 'main'>
           <img src = {photographersData[id].photo} alt={photographersData[id][lang].name}/>
@@ -42,7 +48,7 @@ function Photographer(props) {
         {photographersData[id][lang].works.map((work) => <p key={work}>{work}</p>)}
       </div>
       <p className='back'><Link to="/photographers" id="sg-address" className="sg-address">{TRANSLATE[lang].backToList}</Link></p>
-    </div>
+    </ReactCSSTransitionGroup>	
   )
 }
 
