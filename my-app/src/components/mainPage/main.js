@@ -1,8 +1,11 @@
+
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { TRANSLATE } from "../../constants/translate";
 
-import "./main.css";
+
+import './main.css';
+
 
 import Description from "./description";
 import photographersData from '../../constants/photographersData';
@@ -21,16 +24,19 @@ class MainPage extends Component {
   }
 
   render() {
+
     const lang = this.props.lang;
     const nameOfAuthor = photographersData[this.chooseDate()][lang].name;
     const summary = photographersData[this.chooseDate()][lang].summary;
     const photo = photographersData[this.chooseDate()].photo;
     const id = photographersData[this.chooseDate()].id;
 
+
     return (
       <Fragment>
         <div className="jumbotron">
           <div>
+
             <Description lang = {lang}/>
           </div>
         </div>
@@ -46,6 +52,7 @@ class MainPage extends Component {
               <Link to={`/photographer/${id}`}>
                 <button className="button btn btn-primary">{TRANSLATE[lang].buttonContent}</button>
               </Link>
+
             </p>
           </div>
         </div>

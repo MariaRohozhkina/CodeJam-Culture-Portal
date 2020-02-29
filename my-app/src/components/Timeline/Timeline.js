@@ -1,14 +1,20 @@
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+
 import photographersData from '../../constants/photographersData';
 import './Timeline.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
+
 function Timeline(props) {
   const id = props.id;
   const lang = props.lang;
+
   return <VerticalTimeline className='timeline'>
     {photographersData[id][lang].timeline.map((event) => ( 
       <VerticalTimelineElement
@@ -25,6 +31,7 @@ function Timeline(props) {
       </VerticalTimelineElement>
     ))}
   </VerticalTimeline>
+
 }
 
 export default Timeline;
