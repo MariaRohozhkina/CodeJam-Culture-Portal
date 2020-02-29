@@ -20,7 +20,7 @@ export const TRANSLATE = {
     styleGuide: 'Style Guide',
     photographerWorks: '\'s works',
     authorOfTheDay: 'Photographer of the day',
-    
+
   },
   BE: {
     buttonContent: 'Даведацца больш',
@@ -32,5 +32,6 @@ export const TRANSLATE = {
     styleGuide: 'Стайл Гайд',
     photographerWorks: ' - працы',
     authorOfTheDay: 'Aўтар дня',
+
   }
 };

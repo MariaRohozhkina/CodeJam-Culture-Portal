@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import photographersData from '../../constants/photographersData';
 import './Timeline.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCameraRetro } from '@fortawesome/free-solid-svg-icons'
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
 function Timeline(props) {
   const id = props.id;
@@ -16,7 +16,8 @@ function Timeline(props) {
         date={event.date}
         iconStyle={{ background: '#1890FF', color: '#fff' }}
         contentStyle={{ borderTop: '3px solid #1890FF' }}
-        icon={<FontAwesomeIcon icon={faCameraRetro} className='awesome'/>}
+        icon={<FontAwesomeIcon icon={faCameraRetro} className='awesomeT'/>}
+        key={event.fact}
       >
       <p style={{margin: 0}}>
         {event.fact}

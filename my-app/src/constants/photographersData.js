@@ -922,7 +922,9 @@ const photographersData = [
 			'https://img.tyt.by/n/balay/02/d/---_00237.jpg',
 			'https://img.tyt.by/n/balay/07/1/---_00213.jpg'
 		],
+
 		video: 'https://ok.ru/video/1357974147554'
+
 	},
 	{
     id: 6,
@@ -1042,7 +1044,11 @@ const photographersData = [
 			'http://painters.vlib.by/images/sampledata/Shmerling/gallery/Shmerling-M-Khudozhnik-G-Shutov.jpg',
 			'http://painters.vlib.by/images/sampledata/Shmerling/gallery/Shmerling-M-Malchik-iz-Kozhuhova.jpg'
 		],
+
 		video: 'https://youtu.be/Rh5e-qcdmdQ?t=1510'
+// =======
+// 		video: 'https://www.youtube.com/watch?v=Rh5e-qcdmdQ'
+// >>>>>>> 00ba1d82f6e41987249a2b05a7bb2c7e124529c5
 	}
 ];
 

@@ -8,6 +8,7 @@ import {
   useParams,
 } from "react-router-dom";
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
+import ModalV from '../ModalV/ModalV';
 
 function Photographer(props) {
   const { id } = useParams();
@@ -19,7 +20,15 @@ function Photographer(props) {
         <div className = 'main'>
           <img className = "person-photo"src = {photographersData[id].photo} alt={photographersData[id][lang].name}/>
           <div className = 'info'>
-            <h2>{photographersData[id][lang].name}</h2>
+            <h2>{photographersData[id][lang].name}
+              {photographersData[id].video !== '' ?
+                (
+                  <span className='video-wrapper'>
+                    <ModalV src={photographersData[id].video}/>
+                  </span>
+                ) : null
+              }
+            </h2>
             <p><span className = 'years'>{photographersData[id][lang].years}</span></p>
             <p>{photographersData[id][lang].summary}.</p>
             <p>{photographersData[id][lang].info}</p>
@@ -30,7 +39,7 @@ function Photographer(props) {
       <PhotoGallery id={id}/>
       <div className='works'>
         <h2 className='worksH2'>{photographersData[id][lang].name}{TRANSLATE[lang].photographerWorks}</h2>
-        {photographersData[id][lang].works.map((work) => <p>{work}</p>)}
+        {photographersData[id][lang].works.map((work) => <p key={work}>{work}</p>)}
       </div>
       <p className='back'><Link to="/photographers" id="sg-adress" className="sg-adress">{TRANSLATE[lang].backToList}</Link></p>
     </div>
