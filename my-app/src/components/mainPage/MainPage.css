@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.author-wrapper h2 {
+  text-align: center;
+}
+
 .button-wrapper {
   max-width: 151px;
 }
