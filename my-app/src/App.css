@@ -26,6 +26,10 @@ code {
   justify-content: space-between;
 }
 
+.awesomeM {
+  font-size: 2rem;
+}
+
 .section {
   max-width: 1200px;
   margin: 0 auto;
