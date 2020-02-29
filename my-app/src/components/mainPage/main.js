@@ -1,4 +1,4 @@
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { TRANSLATE } from "../../constants/translate";
@@ -33,7 +33,12 @@ class MainPage extends Component {
 
 
     return (
-      <Fragment>
+     <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
         <div className="jumbotron">
           <div>
 
@@ -56,7 +61,7 @@ class MainPage extends Component {
             </p>
           </div>
         </div>
-      </Fragment>
+      </ReactCSSTransitionGroup>
     );
   }
 }

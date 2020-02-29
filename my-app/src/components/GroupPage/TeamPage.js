@@ -1,9 +1,16 @@
 import React from 'react';
 import './TeamPage.css';
 import { teamInfo } from './teamInfo';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
 export default function TeamPage() {
   return (
+    <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
     <div className="team-page">
       <h2 className="team-header text-center">
         Team members that made contributions to this project
@@ -42,5 +49,6 @@ export default function TeamPage() {
         </div>
       </div>
     </div>
+    </ReactCSSTransitionGroup>
   );
 }

@@ -4,7 +4,15 @@ import { Link, useParams } from 'react-router-dom';
 import photographersData from '../../constants/photographersData';
 import Timeline from '../Timeline/Timeline';
 import { TRANSLATE } from '../../constants/translate';
+
 import Map from '../Map/Map';
+
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
+import {
+  Link,
+  useParams,
+} from "react-router-dom";
+
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
 import ModalV from '../ModalV/ModalV';
 
@@ -13,6 +21,7 @@ function Photographer(props) {
   const lang = props.lang;
 
   return (
+
     <div>
       <div className="main-wrapper">
         <div className="main">
@@ -28,6 +37,26 @@ function Photographer(props) {
                   <ModalV src={photographersData[id].video} />
                 </span>
               ) : null}
+
+    <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
+      <div className = 'main-wrapper'>
+        <div className = 'main'>
+          <img src = {photographersData[id].photo} alt={photographersData[id][lang].name}/>
+          <div className = 'info'>
+            <h2>{photographersData[id][lang].name}
+              {photographersData[id].video !== '' ?
+                (
+                  <span className='video-wrapper'>
+                    <ModalV src={photographersData[id].video}/>
+                  </span>
+                ) : null
+              }
+
             </h2>
             <p>
               <span className="years">{photographersData[id][lang].years}</span>
@@ -49,6 +78,7 @@ function Photographer(props) {
           <p key={work}>{work}</p>
         ))}
       </div>
+
       <p className="back">
         <Link to="/photographers" id="sg-address" className="sg-address">
           {TRANSLATE[lang].backToList}
@@ -56,6 +86,11 @@ function Photographer(props) {
       </p>
     </div>
   );
+
+      <p className='back'><Link to="/photographers" id="sg-address" className="sg-address">{TRANSLATE[lang].backToList}</Link></p>
+    </ReactCSSTransitionGroup>	
+  )
+
 }
 
 export default Photographer;

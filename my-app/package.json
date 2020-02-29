@@ -16,6 +16,7 @@
     "plyr-react": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-images": "^1.1.0-beta.3",

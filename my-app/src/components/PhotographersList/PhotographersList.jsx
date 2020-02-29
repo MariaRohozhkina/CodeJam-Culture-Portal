@@ -3,6 +3,7 @@ import PhotographerCard from '../PhotographerCard/PhotographerCard';
 import photographersData from '../../constants/photographersData';
 import { TRANSLATE } from '../../constants/translate';
 import './PhotographersList.css';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
 function PhotographersList({ lang }) {
   const [term, setTerm] = useState('');
@@ -54,6 +55,12 @@ function PhotographersList({ lang }) {
   const visibleData = searchByTerm(photographersData, term);
 
   return (
+    <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
     <section className="content">
       <div className="container mt-5">
         <div className="search-box input-group mb-3">
@@ -91,6 +98,7 @@ function PhotographersList({ lang }) {
         ))}
       </div>
     </section>
+    </ReactCSSTransitionGroup>
   );
 }
 
