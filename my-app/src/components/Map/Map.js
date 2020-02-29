@@ -2,18 +2,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GoogleMapReact from 'google-map-react';
-import './Map.css';
 
-function Map({ coords }) {
+function Map({ coords, lang }) {
+  const title = () => {
+    switch (lang) {
+      case 'EN':
+        return "Place of author's major activity";
+      case 'RU':
+        return 'Место основной деятельности автора';
+      default:
+        return 'Месца асноўнай дзейнасці аўтара';
+    }
+  };
   return (
-    // Important! Always set the container height explicitly
     <>
-      <h2 className="text-center mt-5">
-        Place of author&apos;s major activity
-      </h2>
+      <h2 className="text-center mt-5">{title()}</h2>
       <div
         className="container px-3 py-4 map-container"
-        style={{ height: '400px', width: '400px' }}
+        style={{
+          width: '400px',
+          height: '400px',
+        }}
       >
         <GoogleMapReact
           bootstrapURLKeys={{
@@ -28,6 +37,7 @@ function Map({ coords }) {
 }
 
 Map.propTypes = {
+  lang: PropTypes.string.isRequired,
   coords: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 

@@ -38,7 +38,7 @@ function Photographer(props) {
         </div>
       </div>
       <Timeline id={id} lang={lang} />
-      <Map coords={photographersData[id].places} />
+      <Map coords={photographersData[id].places} lang={lang} />
       <PhotoGallery id={id} />
       <div className="works">
         <h2 className="worksH2">
