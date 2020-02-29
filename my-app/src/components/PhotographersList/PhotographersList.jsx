@@ -7,7 +7,14 @@ import './PhotographersList.css';
 function PhotographersList({ lang }) {
   const [term, setTerm] = useState('');
 
-  const handleSearch = () => {
+  const handleEnterKey = (e) => {
+    const inputValue = document.querySelector('.search-input');
+    if (e.key === 'Enter') {
+      setTerm(inputValue.value);
+    }
+  };
+
+  const handleClick = () => {
     const inputValue = document.querySelector('.search-input');
     setTerm(inputValue.value);
   };
@@ -16,7 +23,6 @@ function PhotographersList({ lang }) {
     if (searchTerm === '') {
       return items;
     }
-    console.log(lang);
     return items.filter((item) => {
       return (
         item[lang].name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 ||
@@ -25,27 +31,47 @@ function PhotographersList({ lang }) {
       );
     });
   };
-
-  const visibleData = searchByTerm(photographersData, term, lang);
+  const btnTitle = () => {
+    switch (lang) {
+      case 'EN':
+        return 'Search';
+      case 'RU':
+        return 'Поиск';
+      default:
+        return 'Пошук';
+    }
+  };
+  const placeHolderTitle = () => {
+    switch (lang) {
+      case 'EN':
+        return 'Search for photographer';
+      case 'RU':
+        return 'Поиск фотографа';
+      default:
+        return 'Пошук фатографа';
+    }
+  };
+  const visibleData = searchByTerm(photographersData, term);
 
   return (
     <section className="content">
-      <div className="container">
+      <div className="container mt-5">
         <div className="search-box input-group mb-3">
           <input
             type="text"
             className="form-control search-input"
-            placeholder="Search for photographer"
+            placeholder={placeHolderTitle()}
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
+            onKeyDown={handleEnterKey}
           />
           <div className="input-group-append">
             <button
               className="btn btn-outline-primary"
               type="button"
-              onClick={handleSearch}
+              onClick={handleClick}
             >
-              Button
+              {btnTitle()}
             </button>
           </div>
         </div>
