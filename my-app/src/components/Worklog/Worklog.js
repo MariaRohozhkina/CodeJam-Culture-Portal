@@ -21,16 +21,17 @@ const worklogMikhalchanka = [
   {id:1, hour: '1h', features: 'Implementation of animation'},
   {id:2, hour: '0.5h', features: 'Worklog page styling'},
   {id:3, hour: '4h', features: 'Implementation page worklog'},
-  {id:4, hour: '2h', features: 'Implementation page styleguid'},
+  {id:4, hour: '2h', features: 'Implementation page styleguide'},
   {id:5, hour: '3h', features: 'Develop a general design concept'}
 ];
 
 const worklogStepanova = [
-  {id:1, hour: '3h', features: 'Search content'},
-  {id:2, hour: '4.5h', features: 'Implementing a timeline widget'},
-  {id:3, hour: '2h', features: 'The implementation of the widget video'},
-  {id:4, hour: '2.5h', features: 'Implementing the photo gallery widget'},
-  {id:5, hour: '2h', features: 'The translation of content into English'},
+  {id:1, hour: '20h', features: 'Picking up the content and translating it into English and Belarusian'},
+  {id:2, hour: '3h', features: 'Photographer page without widgets'},
+  {id:3, hour: '4.5h', features: 'Timeline widget'},
+  {id:4, hour: '3h', features: 'Video widget'},
+  {id:5, hour: '2.5h', features: 'Photo gallery widget'},
+  {id:6, hour: '2h', features: 'Refactoring'},
 ];
 
 const worklogArkhipov = [
@@ -100,7 +101,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 8 hour</h3>
+			<h3>Total time: 8 hours</h3>
 		</div>
 		 <div className="col-lg-12 sg-display">
 			<h3>Yatskevich</h3>
@@ -120,7 +121,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 8 hour</h3>
+			<h3>Total time: 8 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
 			<h3>Mikhalchanka</h3>
@@ -140,7 +141,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 10.5 hour</h3>
+			<h3>Total time: 10.5 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
 			<h3>Stepanova</h3>
@@ -160,7 +161,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 14 hour</h3>
+			<h3>Total time: 15 + 20 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
 			<h3>Arkhipov</h3>
@@ -180,7 +181,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 5 hour</h3>
+			<h3>Total time: 5 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
 			<h3>Ketebay</h3>
@@ -200,12 +201,13 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 8 hour</h3>
+			<h3>Total time: 8 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
 			<h2 className="sg-h2">Main 1-3 difficulties for the team during implementation</h2>
 			<p>1. Problem with implementing the transition to the photographer's page.</p>
 			<p>2. Difficulties with styling because most of the team worked for the first time with bootstrap.</p>
+			<p>3. Difficulties with the selection of content: too little information was available even in two languages at once.</p>
 		</div>
 		
 		<div className="col-lg-12 sg-display">

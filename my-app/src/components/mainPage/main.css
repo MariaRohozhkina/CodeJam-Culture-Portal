@@ -1,18 +1,20 @@
-.col-md-4 {
-  margin: 0 auto;
+.author-wrapper {
   display: flex;
+  padding-bottom: 25px;
+  justify-content: center;
 }
 
-.border {
+.button-wrapper {
   max-width: 151px;
-  border: 1px solid black;
-  background-color: #1890FF;
-  color: #ffffff;
 }
 
 .author-photo-container {
   margin-right: 20px;
   max-width: 400px;
+}
+
+.jumbotron {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 555px) {

@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
-
 import "./description.css";
-
 import mainPageData from '../../../constants/mainPageContent';
 
 function Description({ lang }) {
@@ -9,10 +7,10 @@ function Description({ lang }) {
     <Fragment>
       <section className="container">
         <div>
-            <h1>{mainPageData[lang].title}</h1>
+            <h1>{mainPageData[0][lang]}</h1>
         </div>
         <div>
-            <p>{mainPageData[lang].content}</p>
+            <p>{mainPageData[1][lang]}</p>
         </div>
       </section>
     </Fragment>

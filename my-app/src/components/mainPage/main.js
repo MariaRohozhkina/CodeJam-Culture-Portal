@@ -12,7 +12,6 @@ class MainPage extends Component {
     super(props);
     this.props = props;
     this.chooseDate = this.chooseDate.bind(this);
-    console.log(props);
   }
 
   chooseDate() {
@@ -21,38 +20,38 @@ class MainPage extends Component {
     return numOfTheAuthor;
   }
 
-    render() {
-      const lang = this.props.lang;
-      const nameOfAuthor = photographersData[this.chooseDate()][lang].name;
-      const summary = photographersData[this.chooseDate()][lang].summary;
-      const photo = photographersData[this.chooseDate()].photo;
-      const id = photographersData[this.chooseDate()].id;
+  render() {
+    const lang = this.props.lang;
+    const nameOfAuthor = photographersData[this.chooseDate()][lang].name;
+    const summary = photographersData[this.chooseDate()][lang].summary;
+    const photo = photographersData[this.chooseDate()].photo;
+    const id = photographersData[this.chooseDate()].id;
 
-      return (
-        <Fragment>
-          <div className="jumbotron">
-            <div>
-              <Description lang = {lang}/>
-            </div>
+    return (
+      <Fragment>
+        <div className="jumbotron">
+          <div>
+            <Description lang = {lang}/>
           </div>
-          <div className="col-md-4">
-            <div>
-              <img className="author-photo-container" src={photo} alt="Photographer"></img>
-            </div>
-            <div id='info-about-author'>
-              <h2>{TRANSLATE[lang].authorOfTheDay}</h2>
-              <h5>{nameOfAuthor}</h5> 
-              <p>{summary}</p>
+        </div>
+        <div className="col-md-12 author-wrapper">
+          <div>
+            <img className="author-photo-container" src={photo} alt="Photographer"></img>
+          </div>
+          <div id='info-about-author'>
+            <h2>{TRANSLATE[lang].authorOfTheDay}</h2>
+            <h5>{nameOfAuthor}</h5> 
+            <p>{summary}</p>
+            <p className='button-wrapper'>
               <Link to={`/photographer/${id}`}>
-                <p className='border'>
-                  <button className="btn btn-default">{TRANSLATE[lang].buttonContent}</button>
-                </p>
+                <button className="button btn btn-primary">{TRANSLATE[lang].buttonContent}</button>
               </Link>
-            </div>
+            </p>
           </div>
-        </Fragment>
-      );
-    }
+        </div>
+      </Fragment>
+    );
   }
-  
-  export default MainPage;
+}
+
+export default MainPage;
