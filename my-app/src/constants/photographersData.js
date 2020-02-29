@@ -255,7 +255,7 @@ const photographersData = [
 			},
 		},
 		RU: {
-			name: 'Ян Бу́лгак',
+			name: 'Ян Булгак',
 			years: '6 октября 1876 - 4 февраля 1950',
 			birthCity: 'Осташин',
 			mapCity: 'Вильнюс',
@@ -391,7 +391,7 @@ const photographersData = [
 			]
 		},
 		EN: {
-			name: 'Jan Bułhak',
+			name: 'Jan Bulhak',
 			years: 'October 6, 1876 - February 4, 1950',
 			birthCity: 'Ostashin',
 			mapCity: 'Vilnius',
@@ -836,13 +836,13 @@ const photographersData = [
 	},
 	{
     		id: 5,
-			surname: 'Sapogov',
-			places : {
-				center : {
-					lat : 52.0997,
-					lng : 23.7637
-				},
+		surname: 'Sapogov',
+		places: {
+			center: {
+				lat: 52.0997,
+				lng: 23.7637
 			},
+		},
 		RU: {
 			name: 'Владимир Сапогов',
 			years: '4 июля 1952 - 11 марта 2012',
