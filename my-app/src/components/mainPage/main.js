@@ -1,7 +1,9 @@
 
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { TRANSLATE } from "../../constants/translate";
+import PhotographerCard from '../PhotographerCard/PhotographerCard';
+import PhotoGallery from '../PhotoGallery/PhotoGallery';
 
 
 import './main.css';
@@ -9,6 +11,7 @@ import './main.css';
 
 import Description from "./description";
 import photographersData from '../../constants/photographersData';
+import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 class MainPage extends Component {
   constructor(props) {
@@ -30,32 +33,32 @@ class MainPage extends Component {
     const summary = photographersData[this.chooseDate()][lang].summary;
     const photo = photographersData[this.chooseDate()].photo;
     const id = photographersData[this.chooseDate()].id;
+    const years = photographersData[this.chooseDate()][lang].years;
 
 
     return (
       <Fragment>
         <div className="jumbotron">
           <div>
-
             <Description lang = {lang}/>
           </div>
         </div>
         <div className="col-md-12 author-wrapper">
-          <div>
-            <img className="author-photo-container" src={photo} alt="Photographer"></img>
-          </div>
           <div id='info-about-author'>
             <h2>{TRANSLATE[lang].authorOfTheDay}</h2>
-            <h5>{nameOfAuthor}</h5> 
-            <p>{summary}</p>
-            <p className='button-wrapper'>
-              <Link to={`/photographer/${id}`}>
-                <button className="button btn btn-primary">{TRANSLATE[lang].buttonContent}</button>
-              </Link>
-
-            </p>
+            <PhotographerCard
+              key={id}
+              id={id}
+              lang={lang}
+              photo={photo}
+              years={years}
+              name={nameOfAuthor}
+              shortDescription={summary}
+              buttonContent={TRANSLATE[lang].buttonContent}
+            />
           </div>
         </div>
+        <PhotoGallery id={id}/>
       </Fragment>
     );
   }

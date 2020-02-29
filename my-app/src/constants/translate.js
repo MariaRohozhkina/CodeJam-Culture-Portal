@@ -9,6 +9,7 @@ export const TRANSLATE = {
     styleGuide: 'Стайл Гайд',
     authorOfTheDay: 'Фотограф дня',
     photographerWorks: ' - работы',
+    teamPageContent: 'Члены команды, которые внесли вклад в этот проект',
   },
   EN: {
     buttonContent: 'Learn more',
@@ -20,6 +21,7 @@ export const TRANSLATE = {
     styleGuide: 'Style Guide',
     authorOfTheDay: 'Photographer of the day',
     photographerWorks: '\'s works',
+    teamPageContent: 'Team members that made contributions to this project',
   },
   BE: {
     buttonContent: 'Даведацца больш',
@@ -31,5 +33,6 @@ export const TRANSLATE = {
     styleGuide: 'Стайл Гайд',
     authorOfTheDay: 'Фатограф дня',
     photographerWorks: ' - працы',
+    teamPageContent: 'Члены каманды, якія ўнеслі свой уклад у гэты праект',
   }
 };

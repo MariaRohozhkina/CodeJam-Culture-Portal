@@ -16,7 +16,6 @@ function PhotographersList({ lang }) {
     if (searchTerm === '') {
       return items;
     }
-    console.log(lang);
     return items.filter((item) => {
       return (
         item[lang].name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 ||

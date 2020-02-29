@@ -17,6 +17,10 @@
   margin-top: 50px;
 }
 
+.flex {
+  display: flex;
+}
+
 @media screen and (max-width: 555px) {
   .col-md-4 {
     display: flex;
