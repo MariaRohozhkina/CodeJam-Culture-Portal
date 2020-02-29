@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import style from './WorklogStyles.css';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
 const worklogRogozhkina = [
   {id:1, hour: '1.5h', features: 'Implementation  the description portal'},
@@ -81,6 +82,12 @@ const extraScope= [
 class Worklog extends Component {
   render() {
 	return (
+	 <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
 	  <section className="worklog" css={style}>
 	    <div className="col-lg-12 sg-display">
 		    <h2 className="sg-h2">Worklog</h2>
@@ -232,7 +239,8 @@ class Worklog extends Component {
 			</div>
 			<p className="sg-font sg-font-primary">Total score: 240</p>
 		</div>
-	  </section>	
+	  </section>
+     </ReactCSSTransitionGroup>	  
 	);
  }
 }

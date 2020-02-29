@@ -1,6 +1,5 @@
-
-import React, { Component, Fragment } from "react";
-// import { Link } from "react-router-dom";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
+import React, { Component } from "react";
 import { TRANSLATE } from "../../constants/translate";
 import PhotographerCard from '../PhotographerCard/PhotographerCard';
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
@@ -11,7 +10,7 @@ import './main.css';
 
 import Description from "./description";
 import photographersData from '../../constants/photographersData';
-import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
+// import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 class MainPage extends Component {
   constructor(props) {
@@ -37,7 +36,12 @@ class MainPage extends Component {
 
 
     return (
-      <Fragment>
+     <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
         <div className="jumbotron">
           <div>
             <Description lang = {lang}/>
@@ -58,8 +62,8 @@ class MainPage extends Component {
             />
           </div>
         </div>
-        <PhotoGallery id={id}/>
-      </Fragment>
+       <PhotoGallery id={id}/>
+      </ReactCSSTransitionGroup>
     );
   }
 }

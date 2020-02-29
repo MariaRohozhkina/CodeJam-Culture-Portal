@@ -12,41 +12,41 @@ import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
 import Navigation from './components/navigation/';
 
 class App extends Component {
-    state = {
-        lang: 'EN',
-    }
+  state = {
+    lang: 'EN',
+  }
 
-    handlerChangeLanguage = (e) => {
-        this.setState({lang: e.target.value});
-    }
+  handlerChangeLanguage = (e) => {
+    this.setState({lang: e.target.value});
+  }
 
-    render() {
-        const { lang } = this.state;
+  render() {
+    const { lang } = this.state;
 
-        return (
-            <Router>
-                <div className="App">
-                    <header className="header">
-                        <div className = "wrapper-header">
-                            <Navigation lang = {lang}/>   
-                            <LanguageSwitch 
-                                lang = {lang}
-                                handlerChangeLanguage = {this.handlerChangeLanguage}
-                            />
-                        </div>                     
-                    </header>
-                    <div className="section">
-                        <Switch>
-                            <Route exact path='/' render={()=><MainPage lang={lang}/>} />
-                            <Route path='/photographers' render={()=><Photographers lang={lang}/>} />
-                            <Route path='/team' render={()=><GroupPage lang={lang}/>} />
-                            <Route path='/worklog' render={()=><Worklog lang={lang}/>} />
-                            <Route path='/styleguide' render={()=><StyleGuide lang={lang}/>} />
-                            <Route path="/photographer/:id" render={()=><Photographer lang={lang}/>} />
-                        </Switch>
-                    </div>
-                </div>
-            </Router>
+    return (
+      <Router>
+        <div className="App">
+          <header className="header">
+            <div className = "wrapper-header">
+              <Navigation lang = {lang}/>   
+              <LanguageSwitch 
+                lang = {lang}
+                handlerChangeLanguage = {this.handlerChangeLanguage}
+              />
+            </div>                     
+          </header>
+          <div className="section">
+            <Switch>
+              <Route exact path='/' render={()=><MainPage lang={lang}/>} />
+              <Route path='/photographers' render={()=><Photographers lang={lang}/>} />
+              <Route path='/team' render={()=><GroupPage lang={lang}/>} />
+              <Route path='/worklog' render={()=><Worklog lang={lang}/>} />
+              <Route path='/styleguide' render={()=><StyleGuide lang={lang}/>} />
+              <Route path="/photographer/:id" render={()=><Photographer lang={lang}/>} />
+            </Switch>
+          </div>
+        </div>
+      </Router>
     );
   }
 }

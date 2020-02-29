@@ -7,55 +7,109 @@ import mariaAva from './avatars/maria.jpeg';
 
 const teamInfo = [
   [
-    {
-      name: 'Aliaksandra Mikhalchanka',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+    { 
+      RU: {
+        name: 'Александра Михальченко',
+        info: 'Беларусь, Минск',
+      },
+      EN: {
+        name: 'Aliaksandra Mikhalchanka',
+        info: 'Belarus, Minsk',
+      },
+      BE: {
+        name: 'Аляксандра Мiхальчанка',
+        info: 'Беларусь, Minsk',
+      },
       github: 'https://github.com/Alex89889',
       avatar: alexAva,
     },
   ],
   [
-    {
-      name: 'Daniyar Ketebay',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+    { 
+      RU: {
+        name: 'Данияр Кетебай',
+        info: 'Казахстан, Атырау',
+      },
+      EN: {
+        name: 'Daniyar Ketebay',
+        info: 'Kazakhstan, Atyrau',
+      },
+      BE: {
+        name: 'Данiяр Кетебай',
+        info: 'Казахстан, Атыраў',
+      },
       github: 'https://github.com/luckytiger1',
       avatar: daniyarAva,
     },
   ],
   [
     {
-      name: 'Denis Arkhipov',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      RU: {
+        name: 'Денис Архипов',
+        info: 'Россия, Моссква',
+      },
+      EN: {
+        name: 'Denis Arkhipov',
+        info: 'Russia, Moskow',
+      },
+      BE: {
+        name: 'Дзянiс Архiпаў',
+        info: 'Расiя, Масква',
+      },
       github: 'https://github.com/VikinGSpb',
       avatar: denisAva,
     },
   ],
   [
     {
-      name: 'Irina Stepanova',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      RU: {
+        name: 'Ирина Степанова',
+        info: 'Казахстан, Алматы',
+      },
+      EN: {
+        name: 'Irina Stepanova',
+        info: 'Kazakhstan, Almaty',
+      },
+      BE: {
+        name: 'Iрына Сцяпанава',
+        info: 'Казахстан, Алматы',
+      },
       github: 'https://github.com/missirisshoi',
       avatar: irisAva,
     },
   ],
   [
     {
-      name: 'Ksenia Yatskevich',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      RU: {
+        name: 'Ксения Яцкевич',
+        info: 'Беларусь, Минск',
+      },
+      EN: {
+        name: 'Ksenia Yatskevich',
+        info: 'Belarus, Minsk',
+      },
+      BE: {
+        name: 'Ксенiя Яцкевiч',
+        info: 'Беларусь, Minsk',
+      },
       github: 'https://github.com/KseniyaYatskevich',
       avatar: kseniyaAva,
     },
   ],
   [
     {
-      name: 'Maria Rogozhkina',
-      info:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere, quos assumenda qui maiores in!',
+      RU: {
+        name: 'Мария Рогожкина',
+        info: 'Беларусь, Минск',
+      },
+      EN: {
+        name: 'Maria Rogozhkina',
+        info: 'Belarus, Minsk',
+      },
+      BE: {
+        name: 'Марыя Рагожкiна',
+        info: 'Беларусь, Minsk',
+      },
       github: 'https://github.com/MariaRohozhkina',
       avatar: mariaAva,
     },

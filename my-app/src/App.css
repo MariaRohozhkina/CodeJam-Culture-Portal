@@ -30,3 +30,11 @@ code {
   margin: 0 auto;
   text-align: justify;
 }
+.animation-appear {
+  opacity: 0;
+}
+
+.animation-appear.animation-appear-active {
+  opacity: 1;
+  transition: opacity .9s ease-in;
+}

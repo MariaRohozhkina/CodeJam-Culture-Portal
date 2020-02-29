@@ -2,9 +2,17 @@ import React from 'react';
 import './TeamPage.css';
 import { teamInfo } from './teamInfo';
 import { TRANSLATE } from "../../constants/translate";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
+
 
 export default function TeamPage({ lang }) {
   return (
+    <ReactCSSTransitionGroup
+      transitionName="animation"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
     <div className="team-page">
       <h2 className="team-header text-center">
        {TRANSLATE[lang].teamPageContent}
@@ -28,8 +36,8 @@ export default function TeamPage({ lang }) {
                   />
                 </div>
                 <div className="card-body">
-                  <h4 className="card-title team-card-title">{el[0].name}</h4>
-                  <p className="card-text">{el[0].info}</p>
+                  <h4 className="card-title team-card-title">{el[0][lang].name}</h4>
+                  <p className="card-text">{el[0][lang].info}</p>
                   <a href={el[0].github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -42,5 +50,6 @@ export default function TeamPage({ lang }) {
         </div>
       </div>
     </div>
+    </ReactCSSTransitionGroup>
   );
 }
