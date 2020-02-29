@@ -4,8 +4,6 @@ import './PhotographerCard.css';
 import {
   Link,
 } from "react-router-dom";
-// import Photographer from '../Photographer/Photographer';
-
 
 function PhotographerCard({
   id,

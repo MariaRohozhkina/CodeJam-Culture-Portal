@@ -1,4 +1,4 @@
-.wrapper {
+.style-wrapper {
     margin: 0 auto;
 }
 
@@ -107,10 +107,11 @@ p {
     margin: 0 0 10px;
 }
 
-#sg-adress a{
+#sg-address a{
 	color: #4d4d4d;
 }
-#sg-adress a:hover, #sg-adress a:focus {
+#sg-address a:hover,
+#sg-address a:focus {
 	color: #007bff;
 }
 

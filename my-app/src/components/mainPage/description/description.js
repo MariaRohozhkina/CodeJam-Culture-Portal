@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
-
 import "./description.css";
-
 import mainPageData from '../../../constants/mainPageContent';
 
 function Description({ lang }) {

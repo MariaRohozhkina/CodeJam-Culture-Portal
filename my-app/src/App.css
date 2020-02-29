@@ -1,6 +1,6 @@
-.app{
+.app {
   font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
-  max-width:1200px;
+  max-width: 1200px;
   margin: 0px auto;
   padding: 0;
   position: relative;
@@ -12,13 +12,10 @@ code {
 }
 
 .header {
-  width: 100vw;
   background: #007bff;
   margin: 0;
-  position: fixed;
   top: 0;
   z-index: 10;
-  
 }
 
 .wrapper-header {
@@ -29,7 +26,7 @@ code {
 }
 
 .section {
-  width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-top: 50px;
+  text-align: justify;
 }

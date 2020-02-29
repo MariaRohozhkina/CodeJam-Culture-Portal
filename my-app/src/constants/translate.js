@@ -7,6 +7,7 @@ export const TRANSLATE = {
     ourTeam: 'Наша команда',
     worklog: 'Ворклог',
     styleGuide: 'Стайл Гайд',
+    authorOfTheDay: 'Фотограф дня',
     photographerWorks: ' - работы',
     authorOfTheDay: 'Фотограф дня',
   },
@@ -18,6 +19,7 @@ export const TRANSLATE = {
     ourTeam: 'Our team',
     worklog: 'Worklog',
     styleGuide: 'Style Guide',
+    authorOfTheDay: 'Photograph of the day',
     photographerWorks: '\'s works',
     authorOfTheDay: 'Photographer of the day',
 
@@ -30,6 +32,7 @@ export const TRANSLATE = {
     ourTeam: 'Наша каманда',
     worklog: 'Ворклог',
     styleGuide: 'Стайл Гайд',
+    authorOfTheDay: 'Фатограф дня',
     photographerWorks: ' - працы',
     authorOfTheDay: 'Aўтар дня',
 
