@@ -38,3 +38,9 @@ code {
   opacity: 1;
   transition: opacity .9s ease-in;
 }
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+    padding: 20px;
+}
