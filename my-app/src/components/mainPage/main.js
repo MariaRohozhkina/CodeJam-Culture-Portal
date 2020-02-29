@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import "./main.css";
 
@@ -19,6 +20,7 @@ class MainPage extends Component {
       const summary = photographersData[this.chooseDate()].RU.summary;
       const photo = photographersData[this.chooseDate()].photo;
       const learnMoreBtn = 'Узнать больше »';
+      const id = photographersData[this.chooseDate()].id;
 
       return (
         <Fragment>

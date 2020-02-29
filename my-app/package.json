@@ -18,7 +18,8 @@
     "react-images": "^1.1.0-beta.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "react-vertical-timeline-component": "^2.5.0"
+    "react-vertical-timeline-component": "^2.5.0",
+    "reactjs-popup": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

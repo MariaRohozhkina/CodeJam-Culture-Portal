@@ -31,6 +31,7 @@ h2 {
 .works {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .worksH2 {
@@ -39,8 +40,7 @@ h2 {
 }
 
 .video-wrapper {
-  max-width: 1200px;
-  margin: 40px auto 30px;
+  margin: 10px;
 }
 
 .back {
