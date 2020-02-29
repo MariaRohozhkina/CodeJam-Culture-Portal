@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { TRANSLATE } from '../../assets/translate';
+import { TRANSLATE } from '../../constants/translate';
+
+import './Navigation.css';
 
 export default class Navigation extends Component {
     render() {

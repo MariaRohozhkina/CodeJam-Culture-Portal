@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
-import photographersData from '../../assets/photographersData';
+import photographersData from '../../constants/photographersData';
 import './PhotoGallery.css';
 import glam from 'glam';
 
