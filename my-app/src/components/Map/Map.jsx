@@ -20,7 +20,7 @@ const Map = ({ coords, lang }) => {
       <div
         className="container px-3 py-4 map-container"
         style={{
-          width: '400px',
+          max-width: '1200px',
           height: '400px',
         }}
       >
