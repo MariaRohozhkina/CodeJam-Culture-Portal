@@ -10,6 +10,8 @@ import MainPage from './components/mainPage/main';
 import Photographer from './components/Photographer/Photographer';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
 import Navigation from './components/navigation/';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
     state = {
@@ -28,6 +30,9 @@ class App extends Component {
                 <div className="App">
                     <header className="header">
                         <div className = "wrapper-header">
+						   <div className="logo">
+								<FontAwesomeIcon icon={faCameraRetro} className='awesomeT'/>
+							</div>
                             <Navigation lang = {lang}/>   
                             <LanguageSwitch 
                                 lang = {lang}
