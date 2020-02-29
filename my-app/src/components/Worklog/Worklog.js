@@ -169,7 +169,7 @@ class Worklog extends Component {
 				))}
               </tbody>
             </table>
-			<h3>Total time: 15 + 20 hours</h3>
+			<h3>Total time: 35 hours</h3>
 		  </div>
 		  <div className="col-lg-12 sg-display">
 			<h3>Denis Arkhipov</h3>
