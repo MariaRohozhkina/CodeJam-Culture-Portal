@@ -7,10 +7,10 @@ function Description({ lang }) {
     <Fragment>
       <section className="container">
         <div>
-            <h1>{mainPageData[0][lang]}</h1>
+            <h1>{mainPageData[lang].title}</h1>
         </div>
         <div>
-            <p>{mainPageData[1][lang]}</p>
+            <p>{mainPageData[lang].content}</p>
         </div>
       </section>
     </Fragment>
