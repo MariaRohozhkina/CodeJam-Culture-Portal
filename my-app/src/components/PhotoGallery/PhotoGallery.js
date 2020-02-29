@@ -14,7 +14,7 @@ class PhotoGallery extends Component {
   };
 
   toggleLightbox = (selectedIndex) => {
-    this.setState(state => ({
+    this.setState((state) => ({
       lightboxIsOpen: !state.lightboxIsOpen,
       selectedIndex,
     }));
@@ -24,14 +24,20 @@ class PhotoGallery extends Component {
     const { isLoading, id } = this.props;
     const { selectedIndex, lightboxIsOpen } = this.state;
     const images = [];
-    photographersData[id].photogallery.map((photo) => images.push({src: photo}));
+    photographersData[id].photogallery.map((photo) =>
+      images.push({ src: photo }),
+    );
 
     return (
       <Fragment>
         {!isLoading ? (
-          <div className='gallery'>
+          <div className="gallery">
             {images.map(({ src }, j) => (
-              <div className='image' onClick={() => this.toggleLightbox(j)} key={src}>
+              <div
+                className="image"
+                onClick={() => this.toggleLightbox(j)}
+                key={src}
+              >
                 <img
                   alt={photographersData[id].name}
                   src={src}

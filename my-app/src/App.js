@@ -10,6 +10,8 @@ import MainPage from './components/mainPage/main';
 import Photographer from './components/Photographer/Photographer';
 import LanguageSwitch from './components/LanguageSwitch/LanguageSwitch';
 import Navigation from './components/navigation/';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   state = {
@@ -22,31 +24,33 @@ class App extends Component {
 
   render() {
     const { lang } = this.state;
-
-    return (
-      <Router>
-        <div className="App">
-          <header className="header">
-            <div className = "wrapper-header">
-              <Navigation lang = {lang}/>   
-              <LanguageSwitch 
-                lang = {lang}
-                handlerChangeLanguage = {this.handlerChangeLanguage}
-              />
-            </div>                     
-          </header>
-          <div className="section">
-            <Switch>
-              <Route exact path='/' render={()=><MainPage lang={lang}/>} />
-              <Route path='/photographers' render={()=><Photographers lang={lang}/>} />
-              <Route path='/team' render={()=><GroupPage lang={lang}/>} />
-              <Route path='/worklog' render={()=><Worklog lang={lang}/>} />
-              <Route path='/styleguide' render={()=><StyleGuide lang={lang}/>} />
-              <Route path="/photographer/:id" render={()=><Photographer lang={lang}/>} />
-            </Switch>
-          </div>
-        </div>
-      </Router>
+        return (
+            <Router>
+                <div className="App">
+                    <header className="header">
+                        <div className = "wrapper-header">
+						   <div className="logo">
+								<FontAwesomeIcon icon={faCameraRetro} className='awesomeT'/>
+							</div>
+                            <Navigation lang = {lang}/>   
+                            <LanguageSwitch 
+                                lang = {lang}
+                                handlerChangeLanguage = {this.handlerChangeLanguage}
+                            />
+                        </div>                     
+                    </header>
+                    <div className="section">
+                        <Switch>
+                            <Route exact path='/' render={()=><MainPage lang={lang}/>} />
+                            <Route path='/photographers' render={()=><Photographers lang={lang}/>} />
+                            <Route path='/team' render={()=><GroupPage lang={lang}/>} />
+                            <Route path='/worklog' render={()=><Worklog lang={lang}/>} />
+                            <Route path='/styleguide' render={()=><StyleGuide lang={lang}/>} />
+                            <Route path="/photographer/:id" render={()=><Photographer lang={lang}/>} />
+                        </Switch>
+                    </div>
+                </div>
+            </Router>
     );
   }
 }
