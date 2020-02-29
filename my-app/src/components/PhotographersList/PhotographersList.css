@@ -1,7 +1,8 @@
 .wrapper {
-  margin: 0 auto;
-  width: 100vw;  
+  margin: 50px auto 10px;
+  max-width: 1200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
+

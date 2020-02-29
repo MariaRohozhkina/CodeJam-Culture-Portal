@@ -7,6 +7,8 @@ export const TRANSLATE = {
     ourTeam: 'Наша команда',
     worklog: 'Ворклог',
     styleGuide: 'Стайл Гайд',
+    authorOfTheDay: 'Фотограф дня',
+    photographerWorks: ' - работы',
   },
   EN: {
     buttonContent: 'Learn more',
@@ -16,6 +18,8 @@ export const TRANSLATE = {
     ourTeam: 'Our team',
     worklog: 'Worklog',
     styleGuide: 'Style Guide',
+    authorOfTheDay: 'Photographer of the day',
+    photographerWorks: '\'s works',
   },
   BE: {
     buttonContent: 'Даведацца больш',
@@ -25,5 +29,7 @@ export const TRANSLATE = {
     ourTeam: 'Наша каманда',
     worklog: 'Ворклог',
     styleGuide: 'Стайл Гайд',
+    authorOfTheDay: 'Фатограф дня',
+    photographerWorks: ' - працы',
   }
 };

@@ -1,6 +1,6 @@
-.wrapper {
+.main-wrapper {
   max-width: 1220px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .main {
@@ -8,7 +8,6 @@
   grid-template-columns: 1fr 2fr;
   grid-gap: 1.5em;
   align-items: center;
-  margin: 0 10px 15px 10px;
 }
 
 img {
@@ -26,6 +25,43 @@ h2 {
 
 .years {
   font-style: italic;
+}
+
+.works {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.worksH2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.video-wrapper {
+  margin: 10px;
+}
+
+.back {
+  margin: 20px auto;
+  max-width: 1200px;
+  justify-content: center;
+  display: flex;
+}
+
+#sg-address a{
+	color: #4d4d4d;
+}
+#sg-address a:hover,
+#sg-address a:focus {
+	color: #007bff;
+}
+
+@media (max-width: 1220px) {
+  .main,
+  .works {
+    margin: 0 10px 15px 10px;
+  }
 }
 
 @media (max-width: 900px) {

@@ -1,11 +1,32 @@
-.app{
-  margin: 0;
+.app {
   font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
-  max-width:1200px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  background: #007bff;
+  margin: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.wrapper-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: justify;
 }

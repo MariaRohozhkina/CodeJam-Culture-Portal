@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PhotographerCard from '../PhotographerCard/PhotographerCard';
-import photographersData from '../../assets/photographersData';
-import { TRANSLATE } from '../../assets/translate';
+import photographersData from '../../constants/photographersData';
+import { TRANSLATE } from '../../constants/translate';
 import './PhotographersList.css';
 
 function PhotographersList({ lang }) {
