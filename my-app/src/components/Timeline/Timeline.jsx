@@ -10,9 +10,8 @@ import './Timeline.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
-function Timeline(props) {
-  const id = props.id;
-  const lang = props.lang;
+const Timeline = (props) => {
+  const { id, lang } = props;
 
   return (
     <VerticalTimeline className="timeline">

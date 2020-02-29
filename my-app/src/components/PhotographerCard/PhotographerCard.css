@@ -1,6 +1,7 @@
 .card {
     border: none !important;
     border-radius: 10px !important;
+
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
@@ -28,8 +29,9 @@
 .card-title {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-align: center;
-    color: #212529;
     padding-bottom: 15px;
+
+    color: #212529;
 }
 
 .h5.card-title {
@@ -57,7 +59,9 @@
 }
 
 .btn-primary.button {
-    border-radius: 4px;
-    background-color: #1890FF;
     width: 100%;
+
+    border-radius: 4px;
+    
+    background-color: #1890FF;
 }

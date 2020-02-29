@@ -16,6 +16,7 @@
   margin: 20px 20px 50px;
   padding: 20px 10px;
   width: 300px;
+
   -webkit-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
   -moz-box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
   box-shadow: -5px 6px 14px -3px rgba(89, 128, 125, 1);
@@ -26,6 +27,7 @@
   width: 32px;
   height: 32px;
   margin: 0 auto;
+  
   background: url(./GitHub-Mark-32px.png);
   background-repeat: no-repeat;
 }

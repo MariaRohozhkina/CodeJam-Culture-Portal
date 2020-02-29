@@ -1,23 +1,20 @@
 import React from 'react';
 import './Photographer.css';
 import { Link, useParams } from 'react-router-dom';
+
 import photographersData from '../../constants/photographersData';
-import Timeline from '../Timeline/Timeline';
+import Timeline from '../Timeline';
 import { TRANSLATE } from '../../constants/translate';
-
-import Map from '../Map/Map';
-
+import Map from '../Map';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
+import PhotoGallery from '../PhotoGallery';
+import ModalV from '../ModalV';
 
-import PhotoGallery from '../PhotoGallery/PhotoGallery';
-import ModalV from '../ModalV/ModalV';
-
-function Photographer(props) {
+const Photographer = (props) => {
   const { id } = useParams();
-  const lang = props.lang;
+  const { lang } = props;
 
   return (
-
     <ReactCSSTransitionGroup
       transitionName="animation"
       transitionAppear={true}

@@ -1,13 +1,13 @@
 const photographersData = [
 	{
-    		id: 0,
-			surname: 'Anempodistov',
-			places : {
-				center : {
-					lat : 53.9006,
-					lng : 27.5590
-				},
+    id: 0,
+		surname: 'Anempodistov',
+		places : {
+			center : {
+				lat : 53.9006,
+				lng : 27.5590
 			},
+		},
 		RU: {
 			name: 'Михаил Владимирович Анемподистов',
 			years: '16 марта 1964 - 24 января 2018',
@@ -119,16 +119,17 @@ const photographersData = [
 			'https://www.velvet.by/files/userfiles/309/velvet_12_239-thumb.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=TGYfUypAjeE'
-	},
+  },
+  
 	{
-	    	id: 1,
-			surname: 'Bazan',
-			places : {
-				center : {
-					lat : 55.1927,
-					lng : 30.2064
-				},
+	  id: 1,
+		surname: 'Bazan',
+		places : {
+			center : {
+				lat : 55.1927,
+				lng : 30.2064
 			},
+		},
 		RU: {
 			name: 'Владимир Сергеевич Базан',
 			years: 'род. 21 октября 1953',
@@ -242,16 +243,17 @@ const photographersData = [
 			'http://www.photoline.ru/critic/picpart/1223/1223664377.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=2S5ggpopE5Y'
-	},
+  },
+  
 	{
-	    	id: 2,
-			surname: 'Bulgak',
-			places : {
-				center : {
-					lat : 54.6872,
-					lng : 25.2797
-				},
+	  id: 2,
+		surname: 'Bulgak',
+		places : {
+			center : {
+				lat : 54.6872,
+				lng : 25.2797
 			},
+		},
 		RU: {
 			name: 'Ян Бу́лгак',
 			years: '6 октября 1876 - 4 февраля 1950',
@@ -466,16 +468,17 @@ const photographersData = [
 			'https://www.sb.by/upload/iblock/7a2/7a2da49996f3efb30a865195e9d36ec0.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=OUl9EEOXAeY'
-	},
+  },
+  
 	{
-    		id: 3,
-			surname: 'Dashkevich',
-			places : {
-				center : {
-					lat : 53.9006,
-					lng : 27.5590
-				},
+    id: 3,
+		surname: 'Dashkevich',
+		places : {
+			center : {
+				lat : 53.9006,
+				lng : 27.5590
 			},
+		},
 		RU: {
 			name: 'Лев Урбанович Дашкевич',
 			years: '12 февраля 1882 - 4 декабря 1957',
@@ -676,15 +679,16 @@ const photographersData = [
 			'https://israelperson.co.il/uploads/images/users/2/b64d87171a74ea15de01c21344355c4a.jpg'
 		],
 		video: 'https://www.tvr.by/upload/video/12101802_(2).mp4'
-	},
+  },
+  
 	{
-    		id: 4,
-    		surname: 'Kachan',places : {
-				center : {
-					lat : 51.9906,
-					lng : 25.3668
-				},
+    id: 4,
+    surname: 'Kachan',places : {
+		  center : {
+				lat : 51.9906,
+				lng : 25.3668
 			},
+		},
 		RU: {
 			name: 'Вадим Аркадьевич Качан',
 			years: 'род. 8 октября 1958',
@@ -958,16 +962,17 @@ const photographersData = [
 			'https://img.tyt.by/n/balay/07/1/---_00213.jpg'
 		],
 		video: ''
-	},
+  },
+  
 	{
-    		id: 6,
-			surname: 'Shmerling',
-			places : {
-				center : {
-					lat : 55.1927,
-					lng : 30.2064
-				},
+    id: 6,
+		surname: 'Shmerling',
+		places : {
+			center : {
+				lat : 55.1927,
+				lng : 30.2064
 			},
+		},
 		RU: {
 			name: 'Михаил Маркович Шмерлинг',
 			years: 'род. 07 декабря 1946',

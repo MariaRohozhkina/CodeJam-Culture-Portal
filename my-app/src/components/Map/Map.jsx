@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GoogleMapReact from 'google-map-react';
 
-function Map({ coords, lang }) {
+const Map = ({ coords, lang }) => {
   const title = () => {
     switch (lang) {
       case 'EN':

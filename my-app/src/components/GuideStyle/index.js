@@ -1,3 +1,3 @@
-import GuideStyle from './GuideStyle';
+import GuideStyle from './GuideStyle.jsx';
 
 export default GuideStyle;

@@ -5,14 +5,16 @@ import {
   Link,
 } from "react-router-dom";
 
-function PhotographerCard({
-  id,
-  name,
-  shortDescription,
-  photo,
-  years,
-  buttonContent,
-}) {  
+const PhotographerCard = ( props ) => {
+  const {
+    id,
+    name,
+    shortDescription,
+    photo,
+    years,
+    buttonContent,
+  } = props;
+
   return ( 
     <Card className="card-photographer">
       <div className="photo">

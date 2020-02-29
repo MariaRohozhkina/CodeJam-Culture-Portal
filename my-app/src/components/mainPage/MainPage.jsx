@@ -1,16 +1,12 @@
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 import React, { Component } from "react";
+import './MainPage.css';
+
 import { TRANSLATE } from "../../constants/translate";
-import PhotographerCard from '../PhotographerCard/PhotographerCard';
-import PhotoGallery from '../PhotoGallery/PhotoGallery';
-
-
-import './main.css';
-
-
+import PhotographerCard from '../PhotographerCard';
+import PhotoGallery from '../PhotoGallery';
 import Description from "./description";
 import photographersData from '../../constants/photographersData';
-// import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 class MainPage extends Component {
   constructor(props) {
@@ -26,14 +22,12 @@ class MainPage extends Component {
   }
 
   render() {
-
-    const lang = this.props.lang;
+    const { lang } = this.props;
     const nameOfAuthor = photographersData[this.chooseDate()][lang].name;
     const summary = photographersData[this.chooseDate()][lang].summary;
     const photo = photographersData[this.chooseDate()].photo;
     const id = photographersData[this.chooseDate()].id;
     const years = photographersData[this.chooseDate()][lang].years;
-
 
     return (
      <ReactCSSTransitionGroup

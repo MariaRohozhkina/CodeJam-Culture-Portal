@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import PhotographerCard from '../PhotographerCard/PhotographerCard';
+import PhotographerCard from '../PhotographerCard';
 import photographersData from '../../constants/photographersData';
 import { TRANSLATE } from '../../constants/translate';
 import './PhotographersList.css';
 
-function PhotographersList({ lang }) {
+const PhotographersList = ({ lang }) => {
   const [term, setTerm] = useState('');
 
   const handleEnterKey = (e) => {
@@ -31,6 +31,7 @@ function PhotographersList({ lang }) {
       );
     });
   };
+
   const btnTitle = () => {
     switch (lang) {
       case 'EN':
@@ -41,6 +42,7 @@ function PhotographersList({ lang }) {
         return 'Пошук';
     }
   };
+
   const placeHolderTitle = () => {
     switch (lang) {
       case 'EN':
@@ -51,6 +53,7 @@ function PhotographersList({ lang }) {
         return 'Пошук фатографа';
     }
   };
+  
   const visibleData = searchByTerm(photographersData, term);
 
   return (
