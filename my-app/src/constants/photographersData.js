@@ -1,11 +1,11 @@
 const photographersData = [
 	{
-    		id: 0,
+    id: 0,
 		surname: 'Anempodistov',
-		places: {
-			center: {
-				lat: 53.9006,
-				lng: 27.5590
+		places : {
+			center : {
+				lat : 53.9006,
+				lng : 27.5590
 			},
 		},
 		RU: {
@@ -119,14 +119,15 @@ const photographersData = [
 			'https://www.velvet.by/files/userfiles/309/velvet_12_239-thumb.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=TGYfUypAjeE'
-	},
+  },
+  
 	{
-	    	id: 1,
+	  id: 1,
 		surname: 'Bazan',
-		places: {
-			center: {
-				lat: 55.1927,
-				lng: 30.2064
+		places : {
+			center : {
+				lat : 55.1927,
+				lng : 30.2064
 			},
 		},
 		RU: {
@@ -242,14 +243,15 @@ const photographersData = [
 			'http://www.photoline.ru/critic/picpart/1223/1223664377.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=2S5ggpopE5Y'
-	},
+  },
+  
 	{
-	    	id: 2,
+	  id: 2,
 		surname: 'Bulgak',
-		places: {
-			center: {
-				lat: 54.6872,
-				lng: 25.2797
+		places : {
+			center : {
+				lat : 54.6872,
+				lng : 25.2797
 			},
 		},
 		RU: {
@@ -466,14 +468,15 @@ const photographersData = [
 			'https://www.sb.by/upload/iblock/7a2/7a2da49996f3efb30a865195e9d36ec0.jpg'
 		],
 		video: 'https://www.youtube.com/watch?v=OUl9EEOXAeY'
-	},
+  },
+  
 	{
-    		id: 3,
+    id: 3,
 		surname: 'Dashkevich',
-		places: {
-			center: {
-				lat: 53.9006,
-				lng: 27.5590
+		places : {
+			center : {
+				lat : 53.9006,
+				lng : 27.5590
 			},
 		},
 		RU: {
@@ -676,14 +679,14 @@ const photographersData = [
 			'https://israelperson.co.il/uploads/images/users/2/b64d87171a74ea15de01c21344355c4a.jpg'
 		],
 		video: 'https://www.tvr.by/upload/video/12101802_(2).mp4'
-	},
+  },
+  
 	{
-    		id: 4,
-    		surname: 'Kachan',
-		places: {
-			center: {
-				lat: 51.9906,
-				lng: 25.3668
+    id: 4,
+    surname: 'Kachan',places : {
+		  center : {
+				lat : 51.9906,
+				lng : 25.3668
 			},
 		},
 		RU: {
@@ -959,14 +962,15 @@ const photographersData = [
 			'https://img.tyt.by/n/balay/07/1/---_00213.jpg'
 		],
 		video: ''
-	},
+  },
+  
 	{
-    		id: 6,
+    id: 6,
 		surname: 'Shmerling',
-		places: {
-			center: {
-				lat: 55.1927,
-				lng: 30.2064
+		places : {
+			center : {
+				lat : 55.1927,
+				lng : 30.2064
 			},
 		},
 		RU: {

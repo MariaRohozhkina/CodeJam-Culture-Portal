@@ -1,3 +1,3 @@
-import Description from './description';
+import Description from './description.jsx';
 
 export default Description;

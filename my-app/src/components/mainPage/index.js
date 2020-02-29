@@ -1,3 +1,3 @@
-import MainPage from './main';
+import MainPage from './MainPage.jsx';
 
 export default MainPage;

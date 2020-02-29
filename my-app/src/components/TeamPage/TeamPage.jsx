@@ -1,11 +1,11 @@
 import React from 'react';
 import './TeamPage.css';
+
 import { teamInfo } from './teamInfo';
 import { TRANSLATE } from "../../constants/translate";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
-
-export default function TeamPage({ lang }) {
+const TeamPage = ({ lang }) => {
   return (
     <ReactCSSTransitionGroup
       transitionName="animation"
@@ -53,3 +53,5 @@ export default function TeamPage({ lang }) {
     </ReactCSSTransitionGroup>
   );
 }
+
+export default TeamPage;

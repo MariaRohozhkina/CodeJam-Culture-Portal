@@ -2,21 +2,21 @@ import React from 'react';
 import { PlyrComponent } from 'plyr-react';
 import './VideoPlayer.css';
 
-export default function VideoPlayer(props) {
-  const videoSrc = props.src;
+const VideoPlayer = (props) => {
+  const { src } = props;
 
   const sources = {
     type: 'video',
     sources: [
       {
-        src: videoSrc,
+        src: src,
         type: 'video/mp4',
         size: 720,
       },
     ],
   }
   
-  if (videoSrc.indexOf('youtube') !== -1) {
+  if (src.indexOf('youtube') !== -1) {
     sources.sources[0].provider = 'youtube';
   }
 
@@ -26,3 +26,5 @@ export default function VideoPlayer(props) {
     </div>
   );
 }
+
+export default VideoPlayer;

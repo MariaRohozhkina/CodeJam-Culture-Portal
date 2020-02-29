@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import './GuideStyleStyles.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
-class GuideStyle extends Component {
-  render() {
+const GuideStyle = () => {
 	return (
 	  <ReactCSSTransitionGroup
       transitionName="animation"
@@ -82,7 +81,6 @@ class GuideStyle extends Component {
 		</div>
      </ReactCSSTransitionGroup>		
 	);
- }
 }
 
 export default GuideStyle;
