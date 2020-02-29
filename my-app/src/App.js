@@ -6,10 +6,10 @@ import TeamPage from './components/TeamPage';
 import StyleGuide from './components/GuideStyle/';
 import Worklog from './components/Worklog/';
 import Photographers from './components/PhotographersList';
-import MainPage from './components/MainPage';
+import MainPage from './components/mainPage';
 import Photographer from './components/Photographer';
 import LanguageSwitch from './components/LanguageSwitch';
-import Navigation from './components/Navigation/';
+import Navigation from './components/navigation/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
