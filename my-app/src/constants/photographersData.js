@@ -1,7 +1,7 @@
 const photographersData = [
 	{
-    id: 0,
-    surname: 'Anempodistov',
+    		id: 0,
+    		surname: 'Anempodistov',
 		RU: {
 			name: 'Михаил Владимирович Анемподистов',
 			years: '16 марта 1964 - 24 января 2018',
@@ -115,8 +115,8 @@ const photographersData = [
 		video: 'https://www.youtube.com/watch?v=TGYfUypAjeE'
 	},
 	{
-    id: 1,
-    surname: 'Bazan',
+	    	id: 1,
+    		surname: 'Bazan',
 		RU: {
 			name: 'Владимир Сергеевич Базан',
 			years: 'род. 21 октября 1953',
@@ -232,8 +232,8 @@ const photographersData = [
 		video: 'https://www.youtube.com/watch?v=2S5ggpopE5Y'
 	},
 	{
-    id: 2,
-    surname: 'Bulgak',
+	    	id: 2,
+    		surname: 'Bulgak',
 		RU: {
 			name: 'Ян Бу́лгак',
 			years: '6 октября 1876 - 4 февраля 1950',
@@ -450,8 +450,8 @@ const photographersData = [
 		video: 'https://www.youtube.com/watch?v=OUl9EEOXAeY'
 	},
 	{
-    id: 3,
-    surname: 'Dashkevich',
+    		id: 3,
+    		surname: 'Dashkevich',
 		RU: {
 			name: 'Лев Урбанович Дашкевич',
 			years: '12 февраля 1882 - 4 декабря 1957',
@@ -654,8 +654,8 @@ const photographersData = [
 		video: 'https://www.tvr.by/upload/video/12101802_(2).mp4'
 	},
 	{
-    id: 4,
-    surname: 'Kachan',
+    		id: 4,
+    		surname: 'Kachan',
 		RU: {
 			name: 'Вадим Аркадьевич Качан',
 			years: 'род. 8 октября 1958',
@@ -802,8 +802,8 @@ const photographersData = [
 		video: 'https://www.youtube.com/watch?v=osrFPceBMKk'
 	},
 	{
-    id: 5,
-    surname: 'Sapogov',
+    		id: 5,
+    		surname: 'Sapogov',
 		RU: {
 			name: 'Владимир Сапогов',
 			years: '4 июля 1952 - 11 марта 2012',
@@ -922,13 +922,11 @@ const photographersData = [
 			'https://img.tyt.by/n/balay/02/d/---_00237.jpg',
 			'https://img.tyt.by/n/balay/07/1/---_00213.jpg'
 		],
-
-		video: 'https://ok.ru/video/1357974147554'
-
+		video: ''
 	},
 	{
-    id: 6,
-    surname: 'Shmerling',
+    		id: 6,
+    		surname: 'Shmerling',
 		RU: {
 			name: 'Михаил Маркович Шмерлинг',
 			years: 'род. 07 декабря 1946',
@@ -1044,11 +1042,7 @@ const photographersData = [
 			'http://painters.vlib.by/images/sampledata/Shmerling/gallery/Shmerling-M-Khudozhnik-G-Shutov.jpg',
 			'http://painters.vlib.by/images/sampledata/Shmerling/gallery/Shmerling-M-Malchik-iz-Kozhuhova.jpg'
 		],
-
-		video: 'https://youtu.be/Rh5e-qcdmdQ?t=1510'
-// =======
-// 		video: 'https://www.youtube.com/watch?v=Rh5e-qcdmdQ'
-// >>>>>>> 00ba1d82f6e41987249a2b05a7bb2c7e124529c5
+		video: 'https://www.youtube.com/watch?v=Rh5e-qcdmdQ'
 	}
 ];
 
