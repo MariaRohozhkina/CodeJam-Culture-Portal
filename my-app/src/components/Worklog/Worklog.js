@@ -15,7 +15,8 @@ const worklogYatskevich = [
   {id:2, hour: '2h', features: 'Implementation of author card page'},
   {id:3, hour: '0.5h', features: 'Author page styling'},
   {id:4, hour: '2h', features: 'Connection of translation (3 languages)'},
-  {id:5, hour: '1h', features: 'The content to be translated into Belarusian'}
+  {id:5, hour: '1h', features: 'The content to be translated into Belarusian'},
+  {id:6, hour: '2h', features: 'Refactoring'}
 ];
 
 const worklogMikhalchanka = [
@@ -45,7 +46,7 @@ const worklogArkhipov = [
 
 const worklogKetebay = [
   {id:1, hour: '3h', features: 'Implementing the search widget'},
-  {id:2, hour: '2h', features: 'Implementing the map widget'},
+  {id:2, hour: '3h', features: 'Implementing the map widget'},
   {id:3, hour: '2h', features: 'Implementing page with team members '},
   {id:4, hour: '1h', features: 'Search page and page with team members styling'}
 ];
@@ -76,22 +77,22 @@ const extraScope= [
   {id:3, description: '10 Contentful / netlify cms is used for content management', isChecked: false},
   {id:4, description: '20 Animations / special effects like paralax', isChecked: true},
   {id:5, description: 'up to 20 Outstanding design;', isChecked: true},
-  {id:6, description: '20 Storybook/styleguidist/other react styleguide tool usage for the page with styles', isChecked: true},
+  {id:6, description: '20 Storybook/styleguidist/other react styleguide tool usage for the page with styles', isChecked: false},
 ];
 
 class Worklog extends Component {
   render() {
 	return (
-	 <ReactCSSTransitionGroup
-      transitionName="animation"
-      transitionAppear={true}
-      transitionAppearTimeout={500}
-      transitionEnter={false}
-      transitionLeave={false}>
-	  <section className="worklog" css={style}>
-	    <div className="col-lg-12 sg-display">
+	  <ReactCSSTransitionGroup
+        transitionName="animation"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}>
+	    <section className="worklog" css={style}>
+	      <div className="col-lg-12 sg-display">
 		    <h2 className="sg-h2">Worklog</h2>
-			<h3>Rogozhkina</h3>
+			<h3>Maria Rogozhkina</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -102,16 +103,16 @@ class Worklog extends Component {
               <tbody>
 			    { worklogRogozhkina.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
 			<h3>Total time: 8 hours</h3>
-		</div>
-		 <div className="col-lg-12 sg-display">
-			<h3>Yatskevich</h3>
+		  </div>
+		  <div className="col-lg-12 sg-display">
+			<h3>Ksenia Yatskevich</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -122,16 +123,16 @@ class Worklog extends Component {
               <tbody>
 			    { worklogYatskevich.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
-			<h3>Total time: 8 hours</h3>
-		</div>
-		<div className="col-lg-12 sg-display">
-			<h3>Mikhalchanka</h3>
+			<h3>Total time: 10 hours</h3>
+		  </div>
+		  <div className="col-lg-12 sg-display">
+			<h3>Aliaksandra Mikhalchanka</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -142,16 +143,16 @@ class Worklog extends Component {
               <tbody>
 			    { worklogMikhalchanka.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
 			<h3>Total time: 10.5 hours</h3>
-		</div>
-		<div className="col-lg-12 sg-display">
-			<h3>Stepanova</h3>
+		  </div>
+		  <div className="col-lg-12 sg-display">
+			<h3> Irina Stepanova</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -162,16 +163,16 @@ class Worklog extends Component {
               <tbody>
 			    { worklogStepanova.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
 			<h3>Total time: 15 + 20 hours</h3>
-		</div>
-		<div className="col-lg-12 sg-display">
-			<h3>Arkhipov</h3>
+		  </div>
+		  <div className="col-lg-12 sg-display">
+			<h3>Denis Arkhipov</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -182,16 +183,16 @@ class Worklog extends Component {
               <tbody>
 			    { worklogArkhipov.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
 			<h3>Total time: 5 hours</h3>
-		</div>
-		<div className="col-lg-12 sg-display">
-			<h3>Ketebay</h3>
+		  </div>
+		  <div className="col-lg-12 sg-display">
+			<h3>Danyar Ketebay</h3>
 			<table className="table table-striped table-bordered table-condensed">
               <thead>
                 <tr>
@@ -202,45 +203,44 @@ class Worklog extends Component {
               <tbody>
 			    { worklogKetebay.map(item =>(
                 <tr key={item.id}>
-                    <td>{item.hour}</td>
-                    <td>{item.features}</td>
+                  <td>{item.hour}</td>
+                  <td>{item.features}</td>
                 </tr>
 				))}
               </tbody>
             </table>
-			<h3>Total time: 8 hours</h3>
+		  <h3>Total time: 9 hours</h3>
 		</div>
 		<div className="col-lg-12 sg-display">
-			<h2 className="sg-h2">Main 1-3 difficulties for the team during implementation</h2>
-			<p>1. Problem with implementing the transition to the photographer's page.</p>
-			<p>2. Difficulties with styling because most of the team worked for the first time with bootstrap.</p>
-			<p>3. Difficulties with the selection of content: too little information was available even in two languages at once.</p>
+		  <h2 className="sg-h2">Main 1-3 difficulties for the team during implementation</h2>
+		  <p>1. Problem with implementing the transition to the photographer's page.</p>
+		  <p>2. Difficulties with styling because most of the team worked for the first time with bootstrap.</p>
+		  <p>3. Difficulties with the selection of content: too little information was available even in two languages at once.</p>
 		</div>
-		
 		<div className="col-lg-12 sg-display">
-			<h2 className="sg-h2">Evaluation</h2>
+		  <h2 className="sg-h2">Evaluation</h2>
 			<h3>Min scope - 50</h3>
 			<div className="group-checkbox">
-				{ minScope.map(item =>(
-					<p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
-				))}
+			  { minScope.map(item =>(
+				<p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
+			  ))}
 			</div>
 			<h3>Normal scope - 140</h3>
 			<div className="group-checkbox">
-				{ normalScope.map(item =>(
-					<p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
-				))}
+			  { normalScope.map(item =>(
+				<p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
+			  ))}
 			</div>
 			<h3>Extra scope - 70</h3>
 			<div className="group-checkbox">
-				{ extraScope.map(item =>(
-					<p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
-				))}
+			  { extraScope.map(item =>(
+				  <p className="sg-font-primary" key={item.id}><label><input type="checkbox" readOnly checked={item.isChecked ? 'checked': ''} /> {item.description}</label></p>
+			  ))}
 			</div>
-			<p className="sg-font sg-font-primary">Total score: 240</p>
-		</div>
-	  </section>
-     </ReactCSSTransitionGroup>	  
+			<p className="sg-font sg-font-primary">Total score: 220</p>
+		  </div>
+	    </section>
+      </ReactCSSTransitionGroup>	  
 	);
  }
 }
