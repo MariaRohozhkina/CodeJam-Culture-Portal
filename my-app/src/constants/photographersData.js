@@ -1,7 +1,13 @@
 const photographersData = [
 	{
     		id: 0,
-    		surname: 'Anempodistov',
+			surname: 'Anempodistov',
+			places : {
+				center : {
+					lat : 53.9006,
+					lng : 27.5590
+				},
+			},
 		RU: {
 			name: 'Михаил Владимирович Анемподистов',
 			years: '16 марта 1964 - 24 января 2018',
@@ -116,7 +122,13 @@ const photographersData = [
 	},
 	{
 	    	id: 1,
-    		surname: 'Bazan',
+			surname: 'Bazan',
+			places : {
+				center : {
+					lat : 55.1927,
+					lng : 30.2064
+				},
+			},
 		RU: {
 			name: 'Владимир Сергеевич Базан',
 			years: 'род. 21 октября 1953',
@@ -233,7 +245,13 @@ const photographersData = [
 	},
 	{
 	    	id: 2,
-    		surname: 'Bulgak',
+			surname: 'Bulgak',
+			places : {
+				center : {
+					lat : 54.6872,
+					lng : 25.2797
+				},
+			},
 		RU: {
 			name: 'Ян Бу́лгак',
 			years: '6 октября 1876 - 4 февраля 1950',
@@ -451,7 +469,13 @@ const photographersData = [
 	},
 	{
     		id: 3,
-    		surname: 'Dashkevich',
+			surname: 'Dashkevich',
+			places : {
+				center : {
+					lat : 53.9006,
+					lng : 27.5590
+				},
+			},
 		RU: {
 			name: 'Лев Урбанович Дашкевич',
 			years: '12 февраля 1882 - 4 декабря 1957',
@@ -655,7 +679,12 @@ const photographersData = [
 	},
 	{
     		id: 4,
-    		surname: 'Kachan',
+    		surname: 'Kachan',places : {
+				center : {
+					lat : 51.9906,
+					lng : 25.3668
+				},
+			},
 		RU: {
 			name: 'Вадим Аркадьевич Качан',
 			years: 'род. 8 октября 1958',
@@ -803,7 +832,13 @@ const photographersData = [
 	},
 	{
     		id: 5,
-    		surname: 'Sapogov',
+			surname: 'Sapogov',
+			places : {
+				center : {
+					lat : 52.0997,
+					lng : 23.7637
+				},
+			},
 		RU: {
 			name: 'Владимир Сапогов',
 			years: '4 июля 1952 - 11 марта 2012',
@@ -926,7 +961,13 @@ const photographersData = [
 	},
 	{
     		id: 6,
-    		surname: 'Shmerling',
+			surname: 'Shmerling',
+			places : {
+				center : {
+					lat : 55.1927,
+					lng : 30.2064
+				},
+			},
 		RU: {
 			name: 'Михаил Маркович Шмерлинг',
 			years: 'род. 07 декабря 1946',
